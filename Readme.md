@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Mary](https://up.htmlacademy.ru/adaptive/20/user/1439613).
-* Наставник: Сергей Скубида (https://htmlacademy.ru/profile/id1210299).
+* Наставник: [Сергей Скубида](https://htmlacademy.ru/profile/id1210299).
 
 ---
 
