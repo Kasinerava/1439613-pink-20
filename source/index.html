@@ -4,9 +4,271 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+  <body class="page_body">
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="74" height="23">
+      </a>
+      <nav class="nav">
+        <button type="button" class="nav__toggle">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <div class="nav__wrapper">
+        <ul class="nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+  <main class="page-main">
+    <h2 class="visually-hidden">Приложение Pink</h2>
+    <section class="intro">
+      <p>Взгляните на жизнь иначе!</p>
+      <ul class="intro__list download-list">
+        <li class="download-list__item">
+          <a href="#">Скачать приложение</a>
+        </li>
+        <li class="download-list__item">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150" alt="Ссылка для айфона" width="47" height="56">
+          </a>
+        </li>
+        <li class="download-list__item">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150" alt="Ссылка для андроид" width="43" height="47">
+          </a>
+        </li>
+        <li class="download-list__item">
+          <a href="#">
+            <img src="https://via.placeholder.com/150x150" alt="Ссылка для майкрософт" width="44" height="41">
+          </a>
+        </li>
+      </ul>
+      <span>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <div class="advantages-offer">
+        <p class="advantages-offer__proposal">Устали от серости мегаполиса?</p>
+        <p class="advantages-offer__proposal">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+<!--        Картинка с телефоном -->
+<!--        <li class="advantages__item">-->
+<!--          <a href="#">-->
+<!--            <img src="#" alt="">-->
+<!--          </a>-->
+<!--        </li>-->
+      </ul>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <div class="reviews__wrapper slider">
+      <div class="reviews__list slider__list">
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+      </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--current" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <section class="proposal">
+      <h2 class="visually-hidden">Предложение</h2>
+      <div class="proposal__wrapper slider">
+        <ul class="proposal__list slider__list">
+          <li class="proposal__item">
+            <table>
+              <tr>
+                <th colspan="2">Стандарт <span>3,99USD</span></th>
+              </tr>
+              <tr>
+                <td>
+                  <p>Розовый фильтр</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="31" height="21">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Смайлики</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="31" height="21">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Комментарии</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="27" height="27">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="proposal__item">
+            <table>
+              <tr>
+                <th colspan="2">Стандарт <span>3,99USD</span></th>
+              </tr>
+              <tr>
+                <td>
+                  <p>Розовый фильтр</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="31" height="21">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Смайлики</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="31" height="21">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Комментарии</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="27" height="27">
+                </td>
+              </tr>
+            </table>
+          </li>
+          <li class="proposal__item">
+            <table>
+              <tr>
+                <th colspan="2">Стандарт <span>3,99USD</span></th>
+              </tr>
+              <tr>
+                <td>
+                  <p>Розовый фильтр</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="31" height="21">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Смайлики</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="31" height="21">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Комментарии</p>
+                </td>
+                <td>
+                  <img src="https://via.placeholder.com/150x150" alt="Подтверждено" width="27" height="27">
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+      <div>
+      <p class="proposal__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle slider__toggle--current" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <p>Остались вопросы? Свяжитесь с нами!</p>
+      <div class="page-footer__contacts contacts">
+        <p class="contacts__text">
+          Звоните:
+          <a class="contacts__phone" href="tel:+78125556666">
+            +7 (812) 555-66-66
+          </a>
+        </p>
+        <p class="contacts__text">
+          Пишите:
+          <a class="contacts__mail" href="mail@htmlacademy.ru">
+            mail@htmlacademy.ru
+          </a>
+        </p>
+        <p class="contacts__text">
+          Приезжайте в гости:
+          <a class="contacts__address" href="#">
+            ул. Большая Конюшенная, 19/8
+          </a>
+        </p>
+        <img src="https://via.placeholder.com/150x150" alt="карта" width="320" height="200">
+      </div>
+      <div class="page-footer__social social">
+        <a href="#" class="page-footer__logo">
+          <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="145" height="40">
+        </a>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--youtube">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="https://via.placeholder.com/150x150" alt="Логотип HTML-academy" width="27" height="34">
+        </a>
+      </div>
+    </footer>
+  </main>
   </body>
 </html>

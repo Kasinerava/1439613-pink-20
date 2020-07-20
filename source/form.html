@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body class="page_body">
+<header class="page-header">
+  <a href="#" class="page-header__logo">
+    <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="74" height="23">
+  </a>
+  <nav class="nav">
+    <button type="button" class="nav__toggle">
+      <span class="visually-hidden">Меню</span>
+    </button>
+    <div class="nav__wrapper">
+      <ul class="nav__list site-list">
+        <li class="site-list__item site-list__item--active">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="photo.html">
+            Фотографии
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Конкурс
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru">
+            HTML ACADEMY
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="form-main">
+  <h2 class="visually-hidden">Объявление конкурса</h2>
+  <section class="form-intro">
+    <p>Конкурс на самое безбашенное путешествие с Пинк</p>
+    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+  </section>
+  <section class="user-application">
+    <h2 class="visually-hidden">Заявка</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+    <div class="user-data">
+      <p>
+        <label for="surname">Фамилия:</label>
+        <input type="text" class ="surname" id="surname" name="surname" required placeholder="Укажите фамилию*">
+      </p>
+      <p>
+        <label for="name">Имя:</label>
+        <input type="text" class ="name" id="name" name="name" required placeholder="Введите ваше имя*">
+      </p>
+      <p>
+        <label for="second_name">Отчество:</label>
+        <input type="text" class ="second_name" id="second_name" name="second_name" required placeholder="Ну и отчество тоже*">
+      </p>
+    </div>
+    <div class="user-skills">
+    <fieldset class="user-journey__list journey-list">
+      <legend>Ваши безбашенные достижения в путешествии:</legend>
+      <div class="journey-list__items">
+        <input type="checkbox" name="checkbox" id="journey-list__items--first" checked>
+        <label for="journey-list__items--first">Сделал селфи с акулой</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--second" checked>
+        <label for="journey-list__items--second">Обгорел на пляже</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--third">
+        <label for="journey-list__items--third">Видел Чака Норриса</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--fourth">
+        <label for="journey-list__items--fourth">Накупил сувениров</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--fifth">
+        <label for="journey-list__items--fifth">Удержал башню</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--sixth" checked>
+        <label for="journey-list__items--sixth">Разгромил отель</label>
+      </div>
+    </fieldset>
+    </div>
+    <div class="user-contacts">
+      <p>
+        <label for="mobile-phone">Номер телефона:</label>
+        <input type="number" class ="mobile-phone" id="mobile-phone" name="mobile-phone" required placeholder="Номер, пожалуйста">
+      </p>
+      <p>
+        <label class="visually-hidden" for="e-mail">Адрес почты:</label>
+        <input type="text" class ="e-mail" id="e-mail" name="email" required placeholder="Введите почту*">
+      </p>
+    </div>
+    <div class="user-phone">
+    <fieldset class="user-gadget__list gadget-list">
+      <legend>С каким приложением путешествовали?</legend>
+      <div class="gadget-list__items">
+        <input type="radio" name="radio" id="gadget-list__items--first" checked class="radio-button">
+        <label for="gadget-list__items--first">Pink для iOS</label>
+        <input type="radio" name="radio" id="gadget-list__items--second" class="radio-button">
+        <label for="gadget-list__items--second">Pink на Android</label>
+        <input type="radio" name="radio" id="gadget-list__items--third" class="radio-button">
+        <label for="gadget-list__items--third">Windows Phone</label>
+      </div>
+    </fieldset>
+    </div>
+    <div class="user-feedback">
+      <label for="user-feedback">Опишите свои эмоции</label>
+      <textarea name="user-feedback" id="user-feedback" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
+    </div>
+      <input type="submit" name="submit" value="Отправить" class="submit-form">
+      <p><span>*</span>Обязательные поля</p>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+    <div class="page-footer__social social">
+      <a href="#" class="page-footer__logo">
+        <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="145" height="40">
+      </a>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter">Twitter</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <p class="copyright__text">Разработано:</p>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="https://via.placeholder.com/150x150" alt="Логотип HTML-academy" width="27" height="34">
+      </a>
+    </div>
+</footer>
+</body>
+</html>
