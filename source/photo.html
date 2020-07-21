@@ -6,7 +6,7 @@
 </head>
 <body class="page_body">
 <header class="page-header">
-  <a href="#" class="page-header__logo">
+  <a href="" class="page-header__logo">
     <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="74" height="23">
   </a>
   <nav class="nav">
@@ -93,22 +93,42 @@
   </section>
   <section class="user-post">
     <h2 class="visually-hidden">Новый пост</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <img src="https://via.placeholder.com/150x150" alt="Фото" width="280" height="374">
+      <div class="user-post__filters filters-button">
+        <input type="radio" name="radio" id="filters-button--first" checked class="radio-button">
+        <label for="filters-button--first">Crop</label>
+        <input type="radio" name="radio" id="filters-button--second" class="radio-button">
+        <label for="filters-button--second">Color</label>
+        <input type="radio" name="radio" id="filters-button--third" class="radio-button">
+        <label for="filters-button--third">Contrast</label>
+      </div>
+      <div class="user-post__slider slider-filter">
+        <label for="slider-filter__user"></label>
+        <input type="range" min="1" max="100" value="5" class="slider" id="slider-filter__user">
+      </div>
+      <div class="user-post__buttons">
+        <input type="submit" name="submit" value="Запостить" class="submit-post">
+        <input type="submit" name="submit" value="Отмена" class="no-submit">
+      </div>
+    </form>
   </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__social social">
-    <a href="#" class="page-footer__logo">
+    <a href="" class="page-footer__logo">
       <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="145" height="40">
     </a>
     <ul class="social__list">
       <li class="social__item">
-        <a href="#" class="social__link social__link--twitter">Twitter</a>
+        <a href="" class="social__link social__link--twitter">Twitter</a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--facebook">Facebook</a>
+        <a href="" class="social__link social__link--facebook">Facebook</a>
       </li>
       <li class="social__item">
-        <a href="#" class="social__link social__link--youtube">Youtube</a>
+        <a href="" class="social__link social__link--youtube">Youtube</a>
       </li>
     </ul>
   </div>
