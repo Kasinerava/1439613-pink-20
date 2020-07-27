@@ -1,0 +1,60 @@
+.proposal {
+  background-color: $grey-light;
+  text-align: center;
+  color:$black;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 150px;
+}
+.proposal__wrapper {
+  position: relative;
+  background-color: $grey-light;
+  max-width: 100%;
+}
+.proposal__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-collapse: collapse;
+  width: 836px;
+  &--title {
+    position: relative;
+    background-color: $blue-light;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 30px;
+    span {
+      font-weight: 300;
+    }
+  }
+}
+.proposal__table--title + .proposal__table--title {
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+.proposal__item {
+  text-align: center;
+  position: relative;
+  background-color: $white;
+  border: 2px solid $grey-light;
+  border-top-width: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  &--yes {
+    fill:$green;
+  }
+  &--no {
+    fill:$red;
+  }
+  &--name {
+    text-transform: uppercase;
+  }
+}
+.proposal__toggles {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+

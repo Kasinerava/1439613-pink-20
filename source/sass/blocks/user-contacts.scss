@@ -1,0 +1,28 @@
+
+.user-data__contacts {
+  &--label {
+    font-size: $font-size;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:$pink;
+    display: inline-block;
+    position: relative;
+    margin-left: 22px;
+    padding-top: 15px;
+  }
+  &--input {
+    position: relative;
+    width: 100%;
+    border:2px solid $grey;
+    border-radius: 1px;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+  }
+}
+.user-contacts {
+  padding-right: 22px;
+  padding-bottom: 35px;
+  padding-top: 25px;
+}

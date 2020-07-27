@@ -2,16 +2,24 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
 <body class="page_body">
 <header class="page-header">
-  <a href="index.html" class="page-header__logo">
-    <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="74" height="23">
+  <a class="page-header__logo">
+    <svg class="page-header__logo--mobile" xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74.426 22.859">
+      <g>
+        <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+        <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+        <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+        <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+      </g>
+    </svg>
   </a>
   <nav class="nav">
     <button type="button" class="nav__toggle">
-      <span class="visually-hidden">Меню</span>
+      <span class="visually-hidden"></span>
     </button>
     <div class="nav__wrapper">
       <ul class="nav__list site-list">
@@ -41,101 +49,143 @@
 </header>
 <main class="form-main">
   <h2 class="visually-hidden">Объявление конкурса</h2>
-  <section class="form-intro">
-    <p>Конкурс на самое безбашенное путешествие с Пинк</p>
-    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-  </section>
-  <section class="user-application">
-    <h2 class="visually-hidden">Заявка</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-    <div class="user-data">
-      <p>
-        <label for="user-data__surname">Фамилия:</label>
-        <input type="text" class ="surname" id="user-data__surname" name="surname" required placeholder="Укажите фамилию*">
-      </p>
-      <p>
-        <label for="user-data__name">Имя:</label>
-        <input type="text" class ="name" id="user-data__name" name="name" required placeholder="Введите ваше имя*">
-      </p>
-      <p>
-        <label for="user-data__name2">Отчество:</label>
-        <input type="text" class ="second_name" id="user-data__name2" name="second_name" required placeholder="Ну и отчество тоже*">
-      </p>
+  <section class="intro">
+    <div class="intro__form-title">
+    <p>Конкурс на самое безбашенное<br>путешествие с Пинк</p>
     </div>
-    <div class="user-journey">
-    <fieldset class="user-journey__list journey-list">
-      <legend>Ваши безбашенные достижения в путешествии:</legend>
+  </section>
+  <div class="user-data">
+    <h2 class="visually-hidden">Имя пользователя</h2>
+    <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+    <form action="https://echo.htmlacademy.ru" method="post" class="user-data__form">
+    <div class="user-data__account">
+      <span>
+        <label for="user-data__account--surname" class="user-data__account--label">Фамилия:</label>
+        <input type="text" class ="user-data__account--input" id="user-data__account--surname" name="surname" required placeholder="Укажите фамилию*">
+      </span>
+      <span>
+        <label for="user-data__accoint--name" class="user-data__account--label">Имя:</label>
+        <input type="text" class ="user-data__account--input" id="user-data__accoint--name" name="name" required placeholder="Введите ваше имя*">
+      </span>
+      <span>
+        <label for="user-data__account--name2" class="user-data__account--label">Отчество:</label>
+        <input type="text" class ="user-data__account--input" id="user-data__account--name2" name="second_name" required placeholder="Ну и отчество тоже">
+      </span>
+    </div>
+    <div class="user-data__journey">
+      <h2 class="visually-hidden">Достижения пользователя</h2>
+    <div class="user-data__journey--achievements">
+    <fieldset class="user-data__journey--form journey-list">
+      <legend class="journey-list__fieldset">Ваши безбашенные достижения в путешествии:</legend>
       <div class="journey-list__items">
-        <input type="checkbox" name="checkbox" id="journey-list__items--first" checked>
-        <label for="journey-list__items--first">Сделал селфи с акулой</label>
-        <input type="checkbox" name="checkbox" id="journey-list__items--second" checked>
-        <label for="journey-list__items--second">Обгорел на пляже</label>
-        <input type="checkbox" name="checkbox" id="journey-list__items--third">
-        <label for="journey-list__items--third">Видел Чака Норриса</label>
-        <input type="checkbox" name="checkbox" id="journey-list__items--fourth">
-        <label for="journey-list__items--fourth">Накупил сувениров</label>
-        <input type="checkbox" name="checkbox" id="journey-list__items--fifth">
-        <label for="journey-list__items--fifth">Удержал башню</label>
-        <input type="checkbox" name="checkbox" id="journey-list__items--sixth" checked>
-        <label for="journey-list__items--sixth">Разгромил отель</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--first" class="checkbox" checked>
+        <label for="journey-list__items--first" class="checkbox__name">Сделал селфи с акулой</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--second" class="checkbox" checked>
+        <label for="journey-list__items--second"  class="checkbox__name">Обгорел на пляже</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--third" class="checkbox">
+        <label for="journey-list__items--third"  class="checkbox__name">Видел Чака Норриса</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--fourth" class="checkbox">
+        <label for="journey-list__items--fourth"  class="checkbox__name">Накупил сувениров</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--fifth" class="checkbox">
+        <label for="journey-list__items--fifth"  class="checkbox__name">Удержал башню</label>
+        <input type="checkbox" name="checkbox" id="journey-list__items--sixth" class="checkbox" checked>
+        <label for="journey-list__items--sixth"  class="checkbox__name">Разгромил отель</label>
       </div>
     </fieldset>
     </div>
-    <div class="user-contacts">
-      <p>
-        <label for="mobile-phone">Номер телефона:</label>
-        <input type="number" class ="mobile-phone" id="mobile-phone" name="mobile-phone" required placeholder="Номер, пожалуйста">
-      </p>
-      <p>
-        <label class="visually-hidden" for="e-mail">Адрес почты:</label>
-        <input type="text" class ="e-mail" id="e-mail" name="email" required placeholder="Введите почту*">
-      </p>
     </div>
-    <div class="user-gadget">
-    <fieldset class="user-gadget__list gadget-list">
-      <legend>С каким приложением путешествовали?</legend>
+      <div class="user-data__contacts">
+        <h2 class="visually-hidden">Контакты пользователя</h2>
+    <div class="user-contacts">
+      <span>
+        <label for="mobile-phone" class="user-data__contacts--label">Номер телефона:</label>
+        <input type="number" class ="user-data__contacts--input" id="mobile-phone" name="mobile-phone" required placeholder="Номер, пожалуйста">
+      </span>
+      <span>
+        <label for="e-mail" class="user-data__contacts--label">Адрес почты:</label>
+        <input type="text" class ="user-data__contacts--input" id="e-mail" name="email" required placeholder="Введите почту*">
+      </span>
+    </div>
+     <div class="user-data__gadget">
+      <h2 class="visually-hidden">Гаджет пользователя</h2>
+    <div class="user-data__gadget--list">
+    <fieldset class="user-data__gadget--form gadget-list">
+      <legend class="gadget-list__fieldset">С каким приложением путешествовали?</legend>
       <div class="gadget-list__items">
         <input type="radio" name="radio" id="gadget-list__items--first" checked class="radio-button">
-        <label for="gadget-list__items--first">Pink для iOS</label>
+        <label for="gadget-list__items--first" class="gadget-list__items--label">Pink для iOS</label>
         <input type="radio" name="radio" id="gadget-list__items--second" class="radio-button">
-        <label for="gadget-list__items--second">Pink на Android</label>
+        <label for="gadget-list__items--second" class="gadget-list__items--label">Pink на Android</label>
         <input type="radio" name="radio" id="gadget-list__items--third" class="radio-button">
-        <label for="gadget-list__items--third">Windows Phone</label>
+        <label for="gadget-list__items--third" class="gadget-list__items--label">Windows Phone</label>
       </div>
     </fieldset>
     </div>
-    <div class="user-feedback">
-      <label for="user-feedback">Опишите свои эмоции</label>
-      <textarea name="user-feedback" id="user-feedback" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
+      </div>
+      </div>
+      <div class="user-data__feedback">
+        <h2 class="visually-hidden">Эмоции пользователя</h2>
+    <div class="user-data__feedback--form">
+      <label for="user-feedback" class="user-data__feedback--label">Опишите свои эмоции</label>
+      <textarea name="user-feedback" id="user-feedback" rows="8" class="user-data__feedback--text">Можно прям в красках, не стесняясь в выражениях</textarea>
     </div>
-      <input type="submit" name="submit" value="Отправить" class="submit-form">
-      <p><span>*</span>Обязательные поля</p>
+      <input type="submit" name="submit" value="Отправить форму" class="user-data__submit">
+      <p><span>*</span> - Обязательные поля</p>
+      </div>
     </form>
-  </section>
+  </div>
 </main>
 <footer class="page-footer">
-    <div class="page-footer__social social">
-      <a href="index.html" class="page-footer__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="145" height="40">
-      </a>
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--twitter">Twitter</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--facebook">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--youtube">Youtube</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип HTML-academy" width="27" height="34">
-      </a>
-    </div>
+  <div class="page-footer__social social">
+    <a href="#" class="page-footer__logo">
+      <img src="https://via.placeholder.com/150x150" alt="Приложение Pink" width="59" height="40">
+      <svg class="page-footer__logo--mobile" xmlns="http://www.w3.org/2000/svg" width="74" height="23" viewBox="0 0 74.426 22.859">
+        <g>
+          <path fill="#000" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+          <path fill="#000" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+          <path fill="#000" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+          <path fill="#000" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+        </g>
+      </svg>
+    </a>
+  </div>
+  <div class="social">
+    <ul class="social__list">
+      <li class="social__item">
+        <a href="#" class="social__link ">
+          <svg xmlns="http://www.w3.org/2000/svg" height="13" width="15" viewBox="0 0 17.5 14.663" class="social__link--twitter">
+            <g id="W6EeEF_1_">
+              <g>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg class="social__link--facebook" xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 8.673 18.944">
+            <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" class="social__link">
+          <svg class="social__link--youtube" width="15" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.64 13.96">
+            <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="page-footer__copyright copyright">
+    <span class="copyright__text">Разработано</span>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <svg class="copyright__link--academy" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+        <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      </svg>
+    </a>
+  </div>
 </footer>
 </body>
 </html>

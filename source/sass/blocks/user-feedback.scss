@@ -1,0 +1,34 @@
+.user-data__feedback {
+  padding-top: 25px;
+  text-align: center;
+  &--label {
+    font-size: $font-size;
+    text-transform: uppercase;
+    color: $pink;
+    line-height: 18px;
+  }
+  &--text {
+    font-family: $font;
+    font-size: $font-size;
+    color: $blue-light;
+    line-height: 18px;
+    width: 276px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-top: 22px;
+  }
+}
+.user-data__submit {
+  text-transform: uppercase;
+  font-weight: 700;
+  background: $green;
+  color:$white;
+  border: 2px solid $green;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 276px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

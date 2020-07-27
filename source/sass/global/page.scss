@@ -1,0 +1,12 @@
+body {
+  margin:0;
+  padding: 0;
+  font-family: $font;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $font-color;
+  background-color: $white;
+}
+.visually-hidden {
+  display: none;
+}

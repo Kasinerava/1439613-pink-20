@@ -1,0 +1,28 @@
+.advantages {
+  background-color: $white;
+  color:$black;
+  text-align: center;
+}
+.advantages__offer {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 50px;
+}
+.advantages__list {
+  background-color: $grey-light;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  list-style-type: none;
+  padding-top: 100px;
+  padding-left:25px;
+  padding-right: 25px;
+}
+.advantages__item {
+  padding-bottom: 13px;
+  &--iphone {
+    padding-top: 30px;
+    height: 282px;
+  }
+}
