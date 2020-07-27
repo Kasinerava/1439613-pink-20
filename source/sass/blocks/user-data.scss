@@ -1,7 +1,8 @@
 .user-data {
   background-color: $white;
-  color:$blue-light;
+  color: $blue-light;
   text-align: left;
+
   p {
     text-align: center;
     font-weight: 300;
@@ -11,31 +12,35 @@
     padding-right: 20px;
   }
 }
+
 .user-data__form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin:auto;
+  margin: auto;
   padding: 0;
   width: 276px;
 }
+
 .user-data__account {
   //Выровнять иначе ?
   padding-right: 22px;
   padding-bottom: 25px;
+
   &--label {
     font-size: $font-size;
     text-transform: uppercase;
-    color:$pink;
+    color: $pink;
     display: inline-block;
     position: relative;
     margin-left: 22px;
     padding-top: 15px;
   }
+
   &--input {
     position: relative;
     width: 100%;
-    border:2px solid $grey;
+    border: 2px solid $grey;
     border-radius: 1px;
     font-size: 18px;
     padding-top: 12px;

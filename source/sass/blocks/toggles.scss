@@ -4,6 +4,7 @@
   font-size: 0;
   text-align: center;
 }
+
 .toggles__item {
   position: relative;
   display: inline-block;
@@ -13,6 +14,7 @@
   background: none;
   width: 20px;
   height: 20px;
+
   &::before {
     content: "";
     position: absolute;
@@ -21,17 +23,20 @@
     height: 6px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: rgba($blue-light, 0.3);
     border-radius: 50%;
   }
+
   &‐‐current::before {
     border: 3px solid $blue-light;
     background-color: transparent;
   }
+
   &:hover::before {
     background-color: rgba($blue-light, 0.6);
   }
+
   &‐‐current {
     cursor: default;
   }

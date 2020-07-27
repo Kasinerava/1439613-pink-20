@@ -1,12 +1,15 @@
 .user-data__journey {
   background-color: $grey-light;
+
   &--achievements {
     padding-top: 25px;
   }
+
   &--form {
-    border:0 none;
+    border: 0 none;
   }
 }
+
 .journey-list__fieldset {
   font-size: $font-size;
   text-transform: uppercase;
@@ -19,6 +22,7 @@
   position: relative;
   padding-top: 25px;
 }
+
 .checkbox__name {
   display: inline-block;
 }

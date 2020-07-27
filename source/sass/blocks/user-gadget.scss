@@ -1,13 +1,16 @@
 .user-data__gadget {
   background-color: $grey-light;
+
   &--list {
     padding-top: 25px;
     padding-bottom: 25px;
   }
+
   &--form {
-    border:0 none;
+    border: 0 none;
   }
 }
+
 .gadget-list__fieldset {
   font-size: $font-size;
   text-transform: uppercase;

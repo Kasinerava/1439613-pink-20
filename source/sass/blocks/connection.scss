@@ -1,29 +1,34 @@
 .connection {
   background-color: $white;
-  color:$black;
+  color: $black;
   text-align: center;
 }
+
 .connection__contacts {
   //Карта перекрывает?
   background: url("../img/bg-triangle-white-footer.svg") bottom center no-repeat;
 }
+
 .connection__us {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
 }
+
 .contacts__text {
   padding-top: 10px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color:$blue-light;
+  color: $blue-light;
+
   a {
     font-weight: 300;
     text-decoration: none;
-    color:$pink;
+    color: $pink;
     font-size: 24px;
   }
+
   &:last-child {
     padding-bottom: 70px;
   }

@@ -1,12 +1,14 @@
 .user-data__feedback {
   padding-top: 25px;
   text-align: center;
+
   &--label {
     font-size: $font-size;
     text-transform: uppercase;
     color: $pink;
     line-height: 18px;
   }
+
   &--text {
     font-family: $font;
     font-size: $font-size;
@@ -19,11 +21,12 @@
     margin-top: 22px;
   }
 }
+
 .user-data__submit {
   text-transform: uppercase;
   font-weight: 700;
   background: $green;
-  color:$white;
+  color: $white;
   border: 2px solid $green;
   border-radius: 3px;
   padding-top: 13px;
