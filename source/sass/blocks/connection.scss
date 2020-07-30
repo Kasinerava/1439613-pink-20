@@ -4,9 +4,15 @@
   text-align: center;
 }
 
-.connection__contacts {
-  //Карта перекрывает?
-  background: url("../img/bg-triangle-white-footer.svg") bottom center no-repeat;
+.contacts__map::before {
+  content: "";
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  margin: 0;
 }
 
 .connection__us {
@@ -15,7 +21,7 @@
   line-height: 29px;
 }
 
-.contacts__text {
+.connection__contacts-text {
   padding-top: 10px;
   font-weight: 700;
   font-size: 18px;
@@ -27,9 +33,5 @@
     text-decoration: none;
     color: $pink;
     font-size: 24px;
-  }
-
-  &:last-child {
-    padding-bottom: 70px;
   }
 }

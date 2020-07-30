@@ -13,13 +13,24 @@
 
 .advantages__list {
   background-color: $grey-light;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  background-position: top;
   list-style-type: none;
   padding-top: 100px;
   padding-left: 25px;
   padding-right: 25px;
+  position: relative;
+}
+
+.advantages__list::before {
+  content: "";
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  width: 1200px;
+  height: 94px;
+  margin:0;
+  left: 0;
+  top: -20px;
 }
 
 .advantages__item {

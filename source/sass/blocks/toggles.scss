@@ -30,7 +30,7 @@
 
   &‐‐current::before {
     border: 3px solid $blue-light;
-    background-color: transparent;
+    background-color: $white;
   }
 
   &:hover::before {
