@@ -1,0 +1,37 @@
+.connection {
+  background-color: $white;
+  color: $black;
+  text-align: center;
+}
+
+.contacts__map::before {
+  content: "";
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  width: 320px;
+  height: 200px;
+  margin: 0;
+}
+
+.connection__us {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.connection__contacts-text {
+  padding-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: $blue-light;
+
+  a {
+    font-weight: 300;
+    text-decoration: none;
+    color: $pink;
+    font-size: 24px;
+  }
+}

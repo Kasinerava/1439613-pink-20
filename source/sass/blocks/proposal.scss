@@ -1,0 +1,89 @@
+.proposal {
+  background-color: $grey-light;
+  text-align: center;
+  color: $black;
+  padding-top: 150px;
+  position: relative;
+}
+
+.proposal::before {
+  content: "";
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  width: 100%;
+  height: 94px;
+  margin: 0;
+  left: 0;
+  top: -20px;
+}
+
+.proposal__wrapper {
+  position: relative;
+  background-color: $grey-light;
+  max-width: 100%;
+}
+
+.proposal__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-collapse: collapse;
+  width: 836px;
+}
+
+.proposal__table-title {
+  position: relative;
+  background-color: $blue-light;
+  color: $white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+
+  span {
+    font-weight: 300;
+  }
+}
+
+.proposal__table-title + .proposal__table-title {
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.proposal__item {
+  text-align: center;
+  position: relative;
+  background-color: $white;
+  border: 2px solid $grey-light;
+  border-top-width: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+}
+
+.proposal__item-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.proposal__item-name {
+  text-transform: uppercase;
+}
+
+.proposal__item-yes {
+  fill: $green;
+}
+
+.proposal__item-no {
+  fill: $red;
+}
+
+.proposal__toggles {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}

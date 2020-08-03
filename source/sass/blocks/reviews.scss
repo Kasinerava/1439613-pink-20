@@ -1,0 +1,26 @@
+.reviews {
+  background-color: $white;
+  text-align: center;
+  font-size: $font-size;
+  line-height: 30px;
+  transform: translateY(-15px);
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:first-child) {
+    display: none;
+  }
+}
+
+.reviews__text {
+  color: $blue-light;
+}

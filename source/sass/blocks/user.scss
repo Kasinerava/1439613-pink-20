@@ -1,0 +1,160 @@
+.user {
+  background-color: $white;
+  color: $blue-light;
+  text-align: left;
+}
+
+.user__title {
+  text-align: center;
+  font-weight: 300;
+  font-size: $font-size;
+  line-height: 30px;
+}
+
+.user__data {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+}
+
+.user__account {
+  padding-bottom: 25px;
+}
+
+.user__account-label {
+  font-size: $font-size;
+  text-transform: uppercase;
+  color: $pink;
+  display: inline-block;
+  position: relative;
+  margin-left: 22px;
+  padding-top: 15px;
+}
+
+.user__account-input {
+  position: relative;
+  width: 100%;
+  border: 2px solid $grey;
+  border-radius: 1px;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+
+.user__journey {
+  background-color: $grey-light;
+}
+
+.user__journey-achievements {
+  padding-top: 25px;
+}
+
+.user__jounrey-list {
+  border: 0 none;
+}
+
+.user__journey-fieldset {
+  font-size: $font-size;
+  text-transform: uppercase;
+  color: $pink;
+  text-align: center;
+  line-height: 18px;
+}
+
+.user__journey-items {
+  position: relative;
+  padding-top: 25px;
+}
+
+.user__journey-checkbox {
+  display: inline-block;
+}
+
+.user__contacts-label {
+  font-size: $font-size;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $pink;
+  display: inline-block;
+  position: relative;
+  margin-left: 22px;
+  padding-top: 15px;
+}
+
+.user__contacts-input {
+  position: relative;
+  border: 2px solid $grey;
+  border-radius: 1px;
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.user__contact {
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+
+.user__gadget {
+  background-color: $grey-light;
+}
+
+.user__gadget-list {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.user__gadget-data {
+  border: 0 none;
+}
+
+.user__gadget-fieldset {
+  font-size: $font-size;
+  text-transform: uppercase;
+  color: $pink;
+  text-align: center;
+  line-height: 18px;
+}
+
+.user__feedback {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.user__feedback-label {
+  font-size: $font-size;
+  text-transform: uppercase;
+  color: $pink;
+  line-height: 18px;
+}
+
+.user__feedback-text {
+  font-family: $font;
+  font-size: $font-size;
+  color: $blue-light;
+  line-height: 18px;
+  width: 276px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-top: 22px;
+}
+
+.user__submit {
+  text-transform: uppercase;
+  font-weight: 700;
+  background: $green;
+  color: $white;
+  border: 2px solid $green;
+  border-radius: 3px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 276px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

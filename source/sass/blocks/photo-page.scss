@@ -1,0 +1,66 @@
+.photo-page {
+  background-color: $white;
+  color: $blue-light;
+}
+
+.photo-page__text {
+  text-align: center;
+  font-weight: 300;
+  font-size: $font-size;
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.photo-page__list {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo-page__item-pic {
+  margin-top: 30px;
+}
+
+.photo-page__item-panorama {
+  transform: translateX(-22px);
+  margin-top: 30px;
+}
+
+.photo-page__item-name {
+  text-align: left;
+  font-weight: 700;
+  font-size: $font-size;
+  padding-left: 17px;
+}
+
+.photo-page__item-time {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.photo-page__item-text {
+  text-align: left;
+  padding-left: 17px;
+}
+
+.photo-page__item-likes {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $pink;
+  margin-left: 18px;
+}
+
+.photo-page__item-heart {
+  fill: $pink;
+}
+
+.photo-page__item-rate {
+  text-align: left;
+  padding-left: 17px;
+  display: flex;
+  align-items: center;
+}
