@@ -4,11 +4,43 @@
   text-align: left;
 }
 
+.user__title-tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 0;
+  }
+}
+
+.user__tablet {
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+}
+
+.user__data-tablet {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-bottom: 25px;
+  }
+}
+
 .user__title {
   text-align: center;
   font-weight: 300;
   font-size: $font-size;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-bottom: 0;
+  }
 }
 
 .user__data {
@@ -31,6 +63,11 @@
   position: relative;
   margin-left: 22px;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    padding-right: 20px;
+  }
 }
 
 .user__account-input {
@@ -46,14 +83,23 @@
 
 .user__journey {
   background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .user__journey-achievements {
   padding-top: 25px;
 }
 
-.user__jounrey-list {
+.user__journey-list {
   border: 0 none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $grey;
+    border-radius: 1px;
+  }
 }
 
 .user__journey-fieldset {
@@ -63,6 +109,7 @@
   text-align: center;
   line-height: 18px;
 }
+
 
 .user__journey-items {
   position: relative;
@@ -82,6 +129,19 @@
   position: relative;
   margin-left: 22px;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.user__contacts-tablet {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .user__contacts-input {
@@ -100,8 +160,28 @@
   padding-top: 25px;
 }
 
+.user__contact-tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: 2px solid $grey;
+    border-radius: 1px;
+  }
+}
+
+.user__contact-fieldset {
+  font-size: $font-size;
+  text-transform: uppercase;
+  color: $pink;
+  line-height: 18px;
+  text-align: center;
+}
+
 .user__gadget {
   background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .user__gadget-list {
@@ -111,6 +191,19 @@
 
 .user__gadget-data {
   border: 0 none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $grey;
+    border-radius: 1px;
+    justify-content: center;
+  }
+}
+
+.user__gadget-items {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .user__gadget-fieldset {
@@ -133,6 +226,14 @@
   line-height: 18px;
 }
 
+.user__fieldset-tablet {
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: 2px solid $grey;
+    border-radius: 1px;
+  }
+}
+
 .user__feedback-text {
   font-family: $font;
   font-size: $font-size;
@@ -143,6 +244,11 @@
   padding-left: 20px;
   padding-right: 25px;
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+    margin-bottom: 25px;
+  }
 }
 
 .user__submit {
@@ -157,4 +263,12 @@
   width: 276px;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+.user__submit-form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

@@ -5,4 +5,11 @@
   margin: 0;
   padding-top: 75px;
   padding-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 120px;
+    padding-bottom: 25px;
+  }
 }

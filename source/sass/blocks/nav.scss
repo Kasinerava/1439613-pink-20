@@ -10,6 +10,14 @@
   cursor: pointer;
   background-color: transparent;
 
+  @media (min-width: $tablet-width) {
+    top: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
   span {
     display: block;
     width: 50px;
@@ -40,6 +48,11 @@
 
 .nav__wrapper {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .nav__list {
@@ -48,6 +61,13 @@
   color: $white;
   font-weight: 700;
   background-color: $blue-light;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    font-weight: 400;
+    padding-left: 95px;
+    padding-top: 25px;
+  }
 }
 
 .nav__item {
@@ -56,9 +76,21 @@
   text-align: center;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+    display: inline;
+    padding-left: 78px;
+  }
+
   a {
     text-decoration: none;
     color: $white;
     text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+      text-transform: none;
+    }
   }
 }

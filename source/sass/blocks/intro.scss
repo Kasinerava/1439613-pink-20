@@ -1,16 +1,22 @@
 .intro {
-  background-color: $blue-dark;
-  color: $white;
-  font-weight: 300;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
   text-align: center;
-  //@media (min-width: $tablet-width) {
-  //  display: flex;
-  //  flex-wrap: wrap;
-  //  flex-flow: column;
-  //}
+
+  @media (min-width: $tablet-width) {
+    padding-right: 340px;
+    position: relative;
+
+    &--form {
+      padding-right: 0;
+    }
+
+    &--photo {
+      padding-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .intro__text {
@@ -19,23 +25,57 @@
   line-height: 29px;
   font-size: 24px;
   padding-top: 90px;
-  //@media (min-width: $tablet-width) {
-  //  margin-left: 90px;
-  //  font-size: 40px;
-  //  width:150px;
-  //  margin-top:50px;
-  //}
+
+  @media (min-width: $tablet-width) {
+    padding-top: 200px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin-left: 170px;
+    margin-right: 170px;
+  }
 }
 
 .intro__text-download {
   display: block;
   padding-bottom: 38px;
-  //@media (min-width: $tablet-width) {
-  //  font-size: $font-size-tablet;
-  //  text-align: left;
-  //  margin-left: 20px;
-  //  margin-top: 25px;
-  //}
+
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 78px;
+  }
+}
+
+.intro::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    width: 100%;
+    height: 545px;
+    left: 0;
+    top: 180px;
+    background-size: contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -150px;
+    top: 210px;
+  }
+}
+
+.intro--form::after {
+  content: none;
+}
+
+.intro--photo::after {
+  content: none;
 }
 
 .intro__mobile {
@@ -44,26 +84,24 @@
   text-align: center;
   margin-top: 28px;
   padding-right: 50px;
-  //  @media (min-width: $tablet-width){
-  //    order: 2;
-  //    transform: translateY(-300px);
-  //}
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .intro__btn {
   margin-top: 20px;
-  //@media (min-width: $tablet-width) {
-  //  margin-left: 20px;
-  //  width: 300px;
-  //}
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .intro__items {
-  //@media (min-width: $tablet-width) {
-  //  text-align: left;
-  //  margin-left: 25px;
-  //  padding-top: 15px;
-  //}
+  @media (min-width: $tablet-width) {
+    padding-top: 25px;
+  }
 }
 
 .intro__item {

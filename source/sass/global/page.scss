@@ -20,14 +20,19 @@ body {
 
 .container {
   width: 320px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-}
 
-.container-tablet {
-  width: 660px;
-  padding-left: 36px;
-  padding-right: 36px;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }

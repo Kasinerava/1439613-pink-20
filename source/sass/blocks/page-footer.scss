@@ -2,6 +2,12 @@
   background-color: $white;
   color: $black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .page-footer__social {
@@ -11,6 +17,10 @@
 .page-footer__pink {
   margin-top: 20px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
 }
 
 .page-footer__social-list {
@@ -64,6 +74,10 @@
   align-items: center;
   justify-content: center;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
 }
 
 .page-footer__copyright-academy {
