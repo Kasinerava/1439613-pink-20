@@ -5,6 +5,11 @@
   line-height: 30px;
   transform: translateY(-15px);
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-top: 45px;
+  }
+
   @media (min-width: $desktop-width) {
     transform: none;
     font-size: 18px;
@@ -19,18 +24,21 @@
   @media (min-width: $desktop-width) {
     display: block;
     fill: $grey-light;
-    margin-left: 425px;
+    margin: auto;
   }
 }
 
 .reviews__author-name {
   font-size: 18px;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 23px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     order: 1;
     margin: 0;
+    padding-top: 35px;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,24 +58,26 @@
 
 .reviews__text {
   color: $blue-light;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
-    padding-top: 35px;
+    padding-top: 50px;
     padding-left: 75px;
     padding-right: 75px;
   }
 }
 
 .reviews__profession {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     display: none;
   }
   order: 2;
   margin: 0;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  font-size: $font-size;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
   }
 }

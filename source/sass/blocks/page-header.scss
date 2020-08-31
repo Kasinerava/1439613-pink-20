@@ -11,6 +11,23 @@
   }
 }
 
+.page-header__pink {
+  cursor: pointer;
+}
+
+.page-header__logo:hover {
+  path {
+    fill: $pink;
+  }
+}
+
+.page-header__logo:active {
+  path {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
 .page-header__logo {
   display: inline-block;
   margin-top: 23px;

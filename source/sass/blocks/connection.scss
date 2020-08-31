@@ -2,6 +2,7 @@
   background-color: $white;
   color: $black;
   text-align: center;
+  padding-top: 20px;
 }
 
 .connection__address {
@@ -19,6 +20,16 @@
   width: 320px;
   height: 200px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 702px;
+  }
 }
 
 .connection__us {
@@ -34,11 +45,13 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    margin-top: 0;
+    padding-top: 35px;
   }
 }
 
 .connection__contacts-text {
-  padding-top: 10px;
+  padding-top: 7px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -49,8 +62,20 @@
     text-decoration: none;
     color: $pink;
     font-size: 24px;
+    line-height: 33px;
   }
 }
+
+.connection__contacts-mail:hover {
+  color: $blue-light;
+  text-decoration: underline;
+}
+
+.connection__contacts-mail:active {
+  color: rgba($blue-light, 0.3);
+  text-decoration: underline;
+}
+
 
 .connection__tablet {
   @media (min-width: $tablet-width) {

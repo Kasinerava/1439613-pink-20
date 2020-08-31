@@ -129,18 +129,18 @@
           <fieldset class="user__journey-list">
             <legend class="user__journey-fieldset">Ваши безбашенные достижения в путешествии:</legend>
             <div class="user__journey-items">
-              <input type="checkbox" name="checkbox" id="user__journey-first" class="user__journey-checkbox" checked>
-              <label for="user__journey-first" class="checkbox__name">Сделал селфи с акулой</label>
-              <input type="checkbox" name="checkbox" id="user__journey-second" class="user__journey-checkbox" checked>
-              <label for="user__journey-second" class="checkbox__name">Обгорел на пляже</label>
-              <input type="checkbox" name="checkbox" id="user__journey-third" class="user__journey-checkbox">
-              <label for="user__journey-third" class="checkbox__name">Видел Чака Норриса</label>
-              <input type="checkbox" name="checkbox" id="user__journey-fourth" class="user__journey-checkbox">
-              <label for="user__journey-fourth" class="checkbox__name">Накупил сувениров</label>
-              <input type="checkbox" name="checkbox" id="user__journey-fifth" class="user__journey-checkbox">
-              <label for="user__journey-fifth" class="checkbox__name">Удержал башню</label>
-              <input type="checkbox" name="checkbox" id="user__journey-sixth" class="user__journey-checkbox" checked>
-              <label for="user__journey-sixth" class="checkbox__name">Разгромил отель</label>
+              <input type="checkbox" name="checkbox" id="user__journey-first" class="user__checkbox-input" checked>
+              <label for="user__journey-first" class="user__checkbox-label">Сделал селфи с акулой</label>
+              <input type="checkbox" name="checkbox" id="user__journey-second" class="user__checkbox-input" checked>
+              <label for="user__journey-second" class="user__checkbox-label">Обгорел на пляже</label>
+              <input type="checkbox" name="checkbox" id="user__journey-third" class="user__checkbox-input">
+              <label for="user__journey-third" class="user__checkbox-label">Видел Чака Норриса</label>
+              <input type="checkbox" name="checkbox" id="user__journey-fourth" class="user__checkbox-input">
+              <label for="user__journey-fourth" class="user__checkbox-label">Накупил сувениров</label>
+              <input type="checkbox" name="checkbox" id="user__journey-fifth" class="user__checkbox-input">
+              <label for="user__journey-fifth" class="user__checkbox-label">Удержал башню</label>
+              <input type="checkbox" name="checkbox" id="user__journey-sixth" class="user__checkbox-input" checked>
+              <label for="user__journey-sixth" class="user__checkbox-label">Разгромил отель</label>
             </div>
           </fieldset>
         </div>
@@ -148,32 +148,39 @@
       <div class="user__contacts">
         <h2 class="visually-hidden">Контакты пользователя</h2>
         <div class="user__contact container">
-          <fieldset class="visually-hidden user__contact-tablet">
+          <fieldset class="user__contact-tablet">
             <legend class="user__contact-fieldset">Контактная информация</legend>
+            <div class="user__contact-wrapper">
             <p class="user__contacts-tablet">
-              <label for="mobile-phone" class="user__contacts-label">Номер телефона:</label>
-              <input type="number" class="user__contacts-input" id="mobile-phone" name="mobile-phone" required
+              <label for="mobile-phone" class="user__contacts-label">Номер телефона</label>
+              <div class="user__input-wrapper user__input-wrapper--contacts user__input-wrapper--phone">
+              <input type="number" class="user__contacts-input" id="mobile-phone"
+                      name="mobile-phone" required
                       placeholder="Номер, пожалуйста">
-            </p>
+              </div>
+            </div>
+            <div class="user__contact-wrapper">
             <p class="user__contacts-tablet">
-              <label for="e-mail" class="user__contacts-label">Адрес почты:</label>
+              <label for="e-mail" class="user__contacts-label">Адрес почты</label>
+              <div class="user__input-wrapper user__input-wrapper--contacts user__input-wrapper--mail">
               <input type="text" class="user__contacts-input" id="e-mail" name="email" required
-                      placeholder="Введите почту*">
-            </p>
+                        placeholder="Введите почту*">
+              </div>
+            </div>
           </fieldset>
         </div>
-        <div class="user__gadget container">
+        <div class="user__gadget">
           <h2 class="visually-hidden">Гаджет пользователя</h2>
-          <div class="user__gadget-list">
+          <div class="user__gadget-list container">
             <fieldset class="user__gadget-data">
               <legend class="user__gadget-fieldset">С каким приложением путешествовали?</legend>
               <div class="user__gadget-items">
-                <input type="radio" name="radio" id="user__gadget--first" checked class="user__gadget-radio">
-                <label for="user__gadget--first" class="gadget-list__items--label">Pink для iOS</label>
+                <input type="radio" name="radio" id="user__gadget--first" class="user__gadget-radio" checked>
+                <label for="user__gadget--first" class="user__gadget-label">Pink для iOS</label>
                 <input type="radio" name="radio" id="user__gadget--second" class="user__gadget-radio">
-                <label for="user__gadget--first" class="gadget-list__items--label">Pink на Android</label>
+                <label for="user__gadget--first" class="user__gadget-label">Pink на Android</label>
                 <input type="radio" name="radio" id="user__gadget--third" class="user__gadget-radio">
-                <label for="user__gadget--first" class="gadget-list__items--label">Windows Phone</label>
+                <label for="user__gadget--first" class="user__gadget-label">Windows Phone</label>
               </div>
             </fieldset>
           </div>
@@ -182,14 +189,14 @@
       <div class="user__feedback">
         <h2 class="visually-hidden">Эмоции пользователя</h2>
         <div class="user__feedback-data container">
-          <fieldset class="visually-hidden user__fieldset-tablet">
+          <fieldset class="user__fieldset-tablet">
             <legend for="user-feedback" class="user__feedback-label">Опишите свои эмоции</legend>
-            <textarea name="user-feedback" id="user-feedback" rows="8" class="user__feedback-text">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea name="user-feedback" id="user-feedback" rows="5" class="user__feedback-text">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
         </div>
         <div class="user__submit-form container">
           <input type="submit" name="submit" value="Отправить форму" class="user__submit">
-          <p><span>*</span> - Обязательные поля</p>
+          <p><span>*</span> — Обязательные поля</p>
         </div>
       </div>
     </div>
