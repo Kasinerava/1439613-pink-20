@@ -2,8 +2,17 @@
   background-color: $grey-light;
   text-align: center;
   color: $black;
-  padding-top: 150px;
+  padding-top: 110px;
   position: relative;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .proposal::before {
@@ -17,12 +26,21 @@
   margin: 0;
   left: 0;
   top: -20px;
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .proposal__wrapper {
   position: relative;
   background-color: $grey-light;
   max-width: 100%;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 105px;
+    padding-top: 70px;
+  }
 }
 
 .proposal__table {
@@ -30,36 +48,130 @@
   left: 50%;
   transform: translateX(-50%);
   border-collapse: collapse;
-  width: 836px;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 
 .proposal__table-title {
-  position: relative;
   background-color: $blue-light;
   color: $white;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-right: 2px solid $grey;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   span {
     font-weight: 300;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    span {
+      font-size: 24px;
+    }
+  }
 }
 
-.proposal__table-title + .proposal__table-title {
-  border-left: 2px solid transparent;
-  border-right: 2px solid transparent;
+.proposal__hit {
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 274px;
+  top: 13px;
+  font-size: 14px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    left: 320px;
+    top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 460px;
+    top: 7px;
+  }
 }
+
+.proposal__table-title--hit::before {
+  @media (min-width: $mobile-width) {
+    content: "";
+    background-image: url("../img/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    width: 100%;
+    height: 73px;
+    left: -109px;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    width: 100%;
+    height: 73px;
+    left: 36px;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 23px;
+  }
+}
+
+.proposal__table-title:last-child {
+  @media (min-width: $tablet-width) {
+    border-top-right-radius: 4px;
+  }
+}
+
+.proposal__table-title:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 4px;
+  }
+}
+
+//.proposal__table-title + .proposal__table-title {
+//  border-left: 2px solid transparent;
+//  border-right: 2px solid transparent;
+//}
 
 .proposal__item {
   text-align: center;
-  position: relative;
   background-color: $white;
-  border: 2px solid $grey-light;
+  border: 2px solid $grey;
   border-top-width: 0;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-left: 10px;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 152px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .proposal__item-part {
@@ -69,10 +181,24 @@
   margin-right: 15px;
   margin-left: 15px;
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    margin: 0;
+  }
 }
 
 .proposal__item-name {
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .proposal__item-yes {
@@ -84,6 +210,45 @@
 }
 
 .proposal__toggles {
-  margin-top: 40px;
   padding-bottom: 40px;
+}
+
+.proposal__tablet-title {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 18px;
+    color: $grey-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.proposal__item-tablet {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    background-color: $white;
+    border: 2px solid $grey;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+  }
+}
+
+.proposal__tablet-name {
+  font-size: $font-size;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

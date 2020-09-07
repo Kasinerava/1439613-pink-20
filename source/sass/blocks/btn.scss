@@ -9,17 +9,25 @@
   font-family: $font;
   font-size: 18px;
   font-weight: 700;
-  padding: 15px 30px;
+  padding: 13px 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 13px 46px;
+  }
 
   &--download {
     border: 3px solid $white;
     border-radius: 30px;
     color: $white;
     background-color: transparent;
+  }
 
-    &:hover {
-      color: $pink;
-      background-color: $white;
-    }
+  &:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
   }
 }

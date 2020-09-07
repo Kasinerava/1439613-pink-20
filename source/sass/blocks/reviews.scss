@@ -4,12 +4,47 @@
   font-size: $font-size;
   line-height: 30px;
   transform: translateY(-15px);
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: none;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 50px;
+  }
+}
+
+.reviews__quote {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    fill: $grey-light;
+    margin: auto;
+  }
 }
 
 .reviews__author-name {
   font-size: 18px;
   font-weight: 700;
-  padding-top: 20px;
+  padding-top: 23px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin: 0;
+    padding-top: 35px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .reviews__item {
@@ -23,4 +58,59 @@
 
 .reviews__text {
   color: $blue-light;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+.reviews__profession {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+  order: 2;
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: $font-size;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+.reviews__text::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    left: 0;
+    top: 80px;
+    opacity: 0.3;
+  }
+}
+
+.reviews__text::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    background-image: url("../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    margin: 0 auto;
+    right: 0;
+    top: 80px;
+    opacity: 0.3;
+  }
 }

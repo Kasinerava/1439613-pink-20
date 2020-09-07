@@ -3,6 +3,15 @@
   margin-right: auto;
   font-size: 0;
   text-align: center;
+  padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .toggles__item {
@@ -12,8 +21,8 @@
   cursor: pointer;
   border: none;
   background: none;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 
   &::before {
     content: "";
@@ -28,13 +37,25 @@
     border-radius: 50%;
   }
 
-  &‐‐current::before {
+  &--current::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 3px solid $blue-light;
     background-color: $white;
   }
 
-  &:hover::before {
+  &:hover:not(.toggles__item--current)::before {
     background-color: rgba($blue-light, 0.6);
+  }
+
+  &:active:not(.toggles__item--current)::before {
+    opacity: 0.1;
   }
 
   &‐‐current {
