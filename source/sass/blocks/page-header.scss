@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -36,10 +37,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 27px;
     margin-bottom: 43px;
+    margin-left: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 130px;
+    margin-left: 0;
   }
 }
 

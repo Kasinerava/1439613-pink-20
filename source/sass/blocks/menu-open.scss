@@ -1,8 +1,22 @@
 .menu-open {
   margin-top: 210px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .nav__wrapper-open {
   display: block;
-  margin-top: -20px;
+  margin-top: 0;
+}
+
+.menu-open .page-header {
+  @media (max-width: $desktop-width) {
+    background-color: #283645;
+  }
+}
+
+.nav__wrapper-open .nav__item--active {
+  border-bottom: none;
 }

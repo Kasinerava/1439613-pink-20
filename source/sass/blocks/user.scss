@@ -47,6 +47,11 @@
     padding-right: 60px;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 756px;
+    margin: 0 auto;
+  }
 }
 
 .user__information {
@@ -55,6 +60,10 @@
   flex-direction: column;
   margin: auto;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .user__account {
@@ -63,6 +72,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 433px;
+    margin-left: 10px;
   }
 }
 
@@ -136,6 +150,11 @@
 .user__journey-items {
   position: relative;
   padding-top: 25px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: wrap;
+  }
 }
 
 .user__journey-checkbox {
@@ -197,7 +216,7 @@
     margin-left: 60px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 371px;
   }
 }
@@ -319,17 +338,34 @@
   }
 }
 
+.user__contact-desktop {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .user__gadget {
   background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 432px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .user__gadget-list {
   padding-top: 25px;
   padding-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 432px;
+  }
 }
 
 .user__gadget-data {
@@ -577,4 +613,22 @@
   background-color: $pink;
   z-index: 2;
   border-radius: 50%;
+}
+
+.user__journey-first {
+  @media (min-width: $desktop-width) {
+    order: -3;
+  }
+}
+
+.user__journey-third {
+  @media (min-width: $desktop-width) {
+    order: -2;
+  }
+}
+
+.user__journey-fifth {
+  @media (min-width: $desktop-width) {
+    order: -1;
+  }
 }
