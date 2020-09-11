@@ -54,7 +54,7 @@
   margin-right: auto;
 }
 
-.photo-page__daypic:before {
+.photo-page__daypic::before {
   position: absolute;
   content: "";
   width: 140px;
