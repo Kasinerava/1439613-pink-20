@@ -9,7 +9,7 @@
 <body class="page_body">
 <div class="background-common">
   <header class="page-header">
-    <a class="page-header__pink">
+    <a class="page-header__pink" href="index.html">
       <svg class="page-header__logo" xmlns="http://www.w3.org/2000/svg" width="147" height="40"
             viewBox="0 0 147 40">
         <g class="page-header__logo-mobile">
@@ -61,7 +61,7 @@
     </a>
     <nav class="nav">
       <button type="button" class="nav__toggle">
-        <span class="visually-hidden"></span>
+        <span></span>
       </button>
       <div class="nav__wrapper">
         <ul class="nav__list">
@@ -99,12 +99,11 @@
 </div>
 <section class="photo-page">
   <h2 class="visually-hidden"> Фотографии пользователей</h2>
-  <div class="container">
     <p class="photo-page__text">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает
       ваших?</p>
-    <ul class="photo-page__list">
+    <ul class="photo-page__list photo-page__list--panorama">
       <li class="photo-page__item">
-        <a href="#">
+        <a href="#" class="photo-page__daypic">
           <picture>
             <source media="(min-width: 940px)" srcset="img/panorama-desktop@1x.jpg">
             <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
@@ -112,6 +111,7 @@
                   class="photo-page__item-panorama">
           </picture>
         </a>
+        <div class="container">
         <div class="photo-page__back">
           <p class="photo-page__item-name">Анна<span class="photo-page__item-time">(5 минут назад)</span></p>
           <p class="photo-page__item-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
@@ -130,7 +130,9 @@
           </div>
         </div>
       </li>
-      <div class="photo-page__tablet-wrapper">
+    </ul>
+      <div class="photo-page__tablet-wrapper container">
+        <ul class="photo-page__list">
         <li class="photo-page__list-item">
           <a href="#">
             <picture>
@@ -140,7 +142,6 @@
                     class="photo-page__item-pic">
             </picture>
           </a>
-          <div class="photo-page__back">
             <p class="photo-page__item-name">Левон<span class="photo-page__item-time">(5 часов назад)</span></p>
             <p class="photo-page__item-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo-page__item-rate">
@@ -153,7 +154,6 @@
               </svg>
               <span class="photo-page__item-likes">Нравится: 356</span>
             </div>
-          </div>
         </li>
         <li class="photo-page__list-item">
           <a href="#">
@@ -164,7 +164,6 @@
                     class="photo-page__item-pic">
             </picture>
           </a>
-          <div class="photo-page__back">
             <p class="photo-page__item-name">Антон<span class="photo-page__item-time">(12 часов назад)</span></p>
             <p class="photo-page__item-text">Соседи будут рады!</p>
             <div class="photo-page__item-rate">
@@ -177,7 +176,6 @@
               </svg>
               <span class="photo-page__item-likes">Нравится: 666</span>
             </div>
-          </div>
         </li>
         <li class="photo-page__list-item">
           <a href="#">
@@ -188,7 +186,6 @@
                     class="photo-page__item-pic">
             </picture>
           </a>
-          <div class="photo-page__back">
             <p class="photo-page__item-name">Борис<span class="photo-page__item-time">(20 часов назад)</span></p>
             <p class="photo-page__item-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo-page__item-rate">
@@ -201,7 +198,6 @@
               </svg>
               <span class="photo-page__item-likes">Нравится: 215</span>
             </div>
-          </div>
         </li>
         <li class="photo-page__list-item">
           <a href="#">
@@ -211,7 +207,6 @@
               <img src="img/photo-fair-mobile@1x.jpg" alt="Панорама" class="photo-page__item-pic">
             </picture>
           </a>
-          <div class="photo-page__back">
             <p class="photo-page__item-name">Сергей<span class="photo-page__item-time">(25 часов назад)</span></p>
             <p class="photo-page__item-text">Самая кубанская в мире!</p>
             <div class="photo-page__item-rate">
@@ -224,7 +219,6 @@
               </svg>
               <span class="photo-page__item-likes">Нравится: 4</span>
             </div>
-          </div>
         </li>
         <li class="photo-page__list-item">
           <a href="#">
@@ -234,7 +228,6 @@
               <img src="img/photo-pov-mobile@1x.jpg" alt="Панорама" class="photo-page__item-pic">
             </picture>
           </a>
-          <div class="photo-page__back">
             <p class="photo-page__item-name">Максим<span class="photo-page__item-time">(40 часов назад)</span></p>
             <p class="photo-page__item-text">Где снег-то?</p>
             <div class="photo-page__item-rate">
@@ -247,7 +240,6 @@
               </svg>
               <span class="photo-page__item-likes">Нравится: 150</span>
             </div>
-          </div>
         </li>
         <li class="photo-page__list-item">
           <a href="#">
@@ -257,7 +249,6 @@
               <img src="img/photo-wing-mobile@1x.jpg" alt="Панорама" class="photo-page__item-pic">
             </picture>
           </a>
-          <div class="photo-page__back">
             <p class="photo-page__item-name">Надежда<span class="photo-page__item-time">(45 часов назад)</span></p>
             <p class="photo-page__item-text">Всем GM и взаимные лайки!</p>
             <div class="photo-page__item-rate">
@@ -270,11 +261,9 @@
               </svg>
               <span class="photo-page__item-likes">Нравится: 2560</span>
             </div>
-          </div>
         </li>
+        </ul>
       </div>
-    </ul>
-  </div>
 </section>
 <section class="user-call">
   <p class="user-call__text">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
@@ -282,12 +271,12 @@
 <section class="user-post">
   <h2 class="visually-hidden">Новый пост</h2>
   <form action="https://echo.htmlacademy.ru" method="post">
-    <div class="user__post-wrapper container">
+    <div class="user__post-wrapper">
       <div class="user__post-img">
         <img src="img/photo-road-mobile@1x.jpg" alt="Фото" width="280" height="374" class="user-post__photo">
       </div>
       <div class="user-post__work">
-        <div class="user-post__filters container">
+        <div class="user-post__filters">
           <div class="user-post__filter-wrapper">
             <div class="user-post__crop">
               <g class="user-post__filter user-post__filter--active">
@@ -351,7 +340,7 @@
         <div class="user-post__publish">
           <div class="user-post__rect">
             <svg>
-              <rect width="86%" height="2"/>
+              <rect width="96%" height="2"/>
             </svg>
           </div>
           <div class="user-post__slider"></div>

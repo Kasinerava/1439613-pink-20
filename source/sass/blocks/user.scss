@@ -4,6 +4,13 @@
   text-align: left;
 }
 
+.user-post {
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
 .user__title-tablet {
   @media (min-width: $tablet-width) {
     display: block;
@@ -487,6 +494,17 @@
   }
 }
 
+.user__submit:hover {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+}
+
+.user__submit:active {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+  color: rgba($white, 0.3);
+}
+
 .user__submit-form {
   span {
     color: $pink;
@@ -537,6 +555,18 @@
   }
 }
 
+.user__checkbox-label:hover {
+  &::before {
+    border: 2px solid $blue-light;
+  }
+}
+
+.user__checkbox-label:active {
+  &::before {
+    border: 2px solid $pink;
+  }
+}
+
 .user__checkbox-input {
   position: absolute;
   top: 0;
@@ -549,7 +579,7 @@
   opacity: 0;
 }
 
-.user__checkbox-input:checked ~ .user__checkbox-label::after {
+.user__checkbox-input:checked + .user__checkbox-label::after {
   content: "";
   position: absolute;
   top: 11px;
@@ -589,20 +619,37 @@
     border-radius: 50%;
   }
 }
+//Не работает
+.user__gadget-radio:hover {
+  &::before {
+    border: 2px solid $blue-light;
+  }
+}
+
+.user__gadget-label:active {
+  &::before {
+    border: 2px solid $blue-light;
+  }
+}
 
 .user__gadget-radio {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
   margin: 0;
   width: 39px;
   height: 39px;
-  z-index: 0;
+  z-index: 2;
   outline: none;
   opacity: 0;
+  cursor: pointer;
 }
 
-.user__gadget-radio:checked ~ .user__gadget-label::after {
+.user__gadget-wrapper {
+  position: relative;
+}
+
+.user__gadget-radio:checked + .user__gadget-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -621,9 +668,21 @@
   }
 }
 
+.user__journey-second {
+  @media (min-width: $desktop-width) {
+    width: 309px;
+  }
+}
+
 .user__journey-third {
   @media (min-width: $desktop-width) {
     order: -2;
+  }
+}
+
+.user__journey-fourth {
+  @media (min-width: $desktop-width) {
+    width: 291px;
   }
 }
 

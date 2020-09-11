@@ -8,7 +8,13 @@
   font-weight: 300;
   font-size: $font-size;
   line-height: 30px;
-  padding-top: 30px;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 280px;
+  }
 }
 
 .photo-page__list {
@@ -18,20 +24,58 @@
   margin: auto;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-column-gap: 20px;
+    padding-left: 0;
+    padding-right: 0;
+
+    &--panorama {
+      display: flex;
+    }
+  }
 }
 
 .photo-page__back {
   background-color: $grey-light;
 }
 
-.photo-page__item-pic {
-  margin-top: 30px;
-}
-
 .photo-page__item-panorama {
-  margin-top: 30px;
   max-width: 100%;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-page__daypic:before {
+  position: absolute;
+  content: "";
+  width: 140px;
+  height: 36px;
+  background-image: url("../img/panorama.png");
+  right: 20px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+    top: 54px;
+  }
+}
+
+.photo-page__item {
+  margin: 0 auto;
+  position: relative;
 }
 
 .photo-page__item-name {
@@ -39,7 +83,7 @@
   font-weight: 700;
   font-size: $font-size;
   padding-left: 17px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .photo-page__item-time {
@@ -51,6 +95,7 @@
 .photo-page__item-text {
   text-align: left;
   padding-left: 17px;
+  margin: 0;
 }
 
 .photo-page__item-likes {
@@ -70,6 +115,7 @@
   display: flex;
   align-items: center;
   padding-bottom: 20px;
+  margin-top: auto;
 }
 
 .photo-page__tablet-wrapper {
@@ -79,15 +125,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 300px 300px 300px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .photo-page__list-item {
+  background: $grey-light;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  grid-column-gap: 10px;
+  gap: 0.7em;
+
   @media (min-width: $tablet-width) {
     max-width: 300px;
+    background: $grey-light;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
   }
 
   img {

@@ -10,6 +10,20 @@
   cursor: pointer;
   background-color: transparent;
 
+  &--cross {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 19px;
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
   @media (min-width: $tablet-width) {
     top: 41px;
   }
@@ -46,31 +60,27 @@
   }
 }
 
-.nav__toggle:hover {
-  span {
-    background-color: $pink;
-
-    &::before {
-      background-color: $pink;
-    }
-
-    &::after {
-      background-color: $pink;
-    }
+.nav__toggle-burger:hover {
+  path {
+    fill: $pink;
   }
 }
 
-.nav__toggle:active {
-  span {
-    background-color: rgba($pink, 0.3);
+.nav__toggle-burger:active {
+  path {
+    fill: rgba($pink, 0.3);
+  }
+}
 
-    &::before {
-      background-color: rgba($pink, 0.3);
-    }
+.nav__toggle-cross::hover {
+  path {
+    fill: $pink;
+  }
+}
 
-    &::after {
-      background-color: rgba($pink, 0.3);
-    }
+.nav__toggle-cross::active {
+  path {
+    fill: rgba($pink, 0.3);
   }
 }
 
@@ -116,7 +126,6 @@
   a {
     text-decoration: none;
     color: $white;
-    text-transform: uppercase;
 
     @media (min-width: $desktop-width) {
       text-transform: none;

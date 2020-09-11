@@ -17,11 +17,16 @@
 }
 
 .intro__text {
+  position: relative;
   display: block;
   margin: auto;
   line-height: 29px;
   font-size: 24px;
   padding-top: 90px;
+
+  @media (max-width: $tablet-width ) {
+    padding-bottom: 325px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 200px;
@@ -61,6 +66,20 @@
   }
 }
 
+.intro__btn::before {
+  @media (max-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    width: 258px;
+    height: 286px;
+    right: 40px;
+    bottom: 84px;
+  }
+}
+
 .intro::after {
   @media (min-width: $tablet-width) {
     content: "";
@@ -68,19 +87,19 @@
     background-repeat: no-repeat;
     background-position: top center;
     position: absolute;
-    width: 100%;
+    width: 550px;
     height: 545px;
-    left: 40px;
+    right: 0;
     bottom: 0;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    left: 140px;
+    right: 0;
     background-image: url("../img/iphone-hand.png");
     height: 645px;
     background-position: center;
-    width: 100%;
+    width: 618px;
   }
 }
 
@@ -92,19 +111,8 @@
   content: none;
 }
 
-.intro__mobile {
-  display: block;
-  margin: auto;
-  text-align: center;
-  margin-top: 28px;
-  padding-right: 60px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 .intro__btn {
+  position: relative;
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
