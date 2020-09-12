@@ -11,7 +11,7 @@
   }
 }
 
-.contacts__map::before {
+.connection__map::before {
   content: "";
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@
   }
 }
 
-.contacts__map {
+.connection__map {
   img {
     overflow: hidden;
     width: 100%;

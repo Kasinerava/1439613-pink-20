@@ -46,33 +46,24 @@
   }
 }
 
-.nav__toggle:hover {
-  span {
-    background-color: $pink;
-
-    &::before {
-      background-color: $pink;
-    }
-
-    &::after {
-      background-color: $pink;
-    }
-  }
+.nav__buttons {
+  display: none;
 }
 
-.nav__toggle:active {
-  span {
-    background-color: rgba($pink, 0.3);
-
-    &::before {
-      background-color: rgba($pink, 0.3);
-    }
-
-    &::after {
-      background-color: rgba($pink, 0.3);
-    }
-  }
+.nav__toggle-cross {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 19px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
 }
+
 
 .nav__wrapper {
   display: none;

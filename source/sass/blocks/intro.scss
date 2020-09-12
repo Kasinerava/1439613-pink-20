@@ -5,6 +5,8 @@
   @media (min-width: $tablet-width) {
     padding-right: 340px;
     position: relative;
+    max-width: 660px;
+    margin: 0 auto;
 
     &--form {
       padding-right: 0;
@@ -22,6 +24,14 @@
   line-height: 29px;
   font-size: 24px;
   padding-top: 90px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 320px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 200px;
@@ -42,6 +52,7 @@
 }
 
 .intro__text-download {
+  position: relative;
   display: block;
   padding-bottom: 38px;
   padding-top: 5px;
@@ -61,6 +72,24 @@
   }
 }
 
+.intro__btn::before {
+  @media (max-width: $tablet-width) {
+    content: "";
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    width: 258px;
+    height: 286px;
+    left: -22px;
+    bottom: 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
 .intro::after {
   @media (min-width: $tablet-width) {
     content: "";
@@ -68,19 +97,19 @@
     background-repeat: no-repeat;
     background-position: top center;
     position: absolute;
-    width: 100%;
+    width: 550px;
     height: 545px;
-    left: 40px;
+    right: 0;
     bottom: 0;
     z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    left: 140px;
     background-image: url("../img/iphone-hand.png");
     height: 645px;
     background-position: center;
-    width: 100%;
+    width: 618px;
+    left: 200px;
   }
 }
 
@@ -105,6 +134,7 @@
 }
 
 .intro__btn {
+  position: relative;
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {

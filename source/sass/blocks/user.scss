@@ -487,6 +487,17 @@
   }
 }
 
+.user__submit:hover {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+}
+
+.user__submit:active {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+  color: rgba($white, 0.3);
+}
+
 .user__submit-form {
   span {
     color: $pink;
@@ -537,6 +548,18 @@
   }
 }
 
+.user__checkbox-label:hover {
+  &::before {
+    border: 2px solid $blue-light;
+  }
+}
+
+.user__checkbox-label:active {
+  &::before {
+    border: 2px solid $pink;
+  }
+}
+
 .user__checkbox-input {
   position: absolute;
   top: 0;
@@ -549,7 +572,7 @@
   opacity: 0;
 }
 
-.user__checkbox-input:checked ~ .user__checkbox-label::after {
+.user__checkbox-input:checked + .user__checkbox-label::after {
   content: "";
   position: absolute;
   top: 11px;
@@ -590,6 +613,18 @@
   }
 }
 
+.user__gadget-label:hover {
+  &::before {
+    border: 2px solid $blue-light;
+  }
+}
+
+.user__gadget-label:active {
+  &::before {
+    border: 2px solid $pink;
+  }
+}
+
 .user__gadget-radio {
   position: absolute;
   top: 0;
@@ -602,7 +637,7 @@
   opacity: 0;
 }
 
-.user__gadget-radio:checked ~ .user__gadget-label::after {
+.user__gadget-radio:checked + .user__gadget-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -621,9 +656,21 @@
   }
 }
 
+.user__journey-second {
+  @media (min-width: $desktop-width) {
+    width: 309px;
+  }
+}
+
 .user__journey-third {
   @media (min-width: $desktop-width) {
     order: -2;
+  }
+}
+
+.user__journey-fourth {
+  @media (min-width: $desktop-width) {
+    width: 291px;
   }
 }
 

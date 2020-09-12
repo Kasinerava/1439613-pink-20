@@ -6,9 +6,17 @@
   }
 }
 
-.nav__wrapper-open {
+.nav.nav__wrapper-open .nav__wrapper {
   display: block;
   margin-top: 0;
+}
+
+.nav.nav__wrapper-open .nav__toggle {
+  display: none;
+}
+
+.nav.nav__wrapper-open .nav__toggle-cross {
+  display: block;
 }
 
 .menu-open .page-header {
@@ -17,6 +25,6 @@
   }
 }
 
-.nav__wrapper-open .nav__item--active {
+.nav.nav__wrapper-open .nav__item--active {
   border-bottom: none;
 }
