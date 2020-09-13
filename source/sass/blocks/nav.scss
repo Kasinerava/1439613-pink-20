@@ -53,7 +53,7 @@
 .nav__toggle-cross {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 45px;
   right: 19px;
   width: 50px;
   height: 24px;
@@ -125,4 +125,20 @@
 
 .nav__item a:active {
   color: rgba($white, 0.3);
+}
+
+button.nav__toggle:hover svg path {
+  fill: $pink;
+}
+
+button.nav__toggle:active svg path {
+  fill: rgba($white, 0.3);
+}
+
+button.nav__toggle-cross:hover svg path {
+  fill: $pink;
+}
+
+button.nav__toggle-cross:active svg path {
+  fill: rgba($white, 0.3);
 }

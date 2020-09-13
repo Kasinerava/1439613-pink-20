@@ -68,11 +68,16 @@
   border-bottom: 1px solid $pink;
   display: inline-block;
   line-height: 1;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
   }
+}
+
+.effects__url:hover {
+  border-bottom: none;
 }
 
 .effects__image {
