@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
 <body class="page_body">
@@ -83,7 +83,7 @@
               Главная
             </a>
           </li>
-          <li class="nav__item nav__items--active">
+          <li class="nav__item nav__item--active">
             <a href="photo.html">
               Фотографии
             </a>
@@ -95,7 +95,7 @@
           </li>
           <li class="nav__item">
             <a href="https://htmlacademy.ru">
-              HTML ACADEMY
+              HTML Academy
             </a>
           </li>
         </ul>
@@ -307,6 +307,7 @@
   <section class="user-post">
     <h2 class="visually-hidden">Новый пост</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="user-post__wrapper">
       <div class="user__post-img">
         <img src="img/photo-road-mobile@1x.jpg" alt="Фото" width="280" height="374" class="user-post__photo">
       </div>
@@ -370,7 +371,7 @@
           <div class="user-post__publish">
             <div class="user-post__rect">
               <svg>
-                <rect width="86%" height="2"/>
+                <rect width="85%" height="2"/>
               </svg>
             </div>
             <div class="user-post__slider"></div>
@@ -380,6 +381,7 @@
             <input type="submit" name="submit" value="Отмена" class="user-post__buttons--stop btn">
           </div>
         </div>
+      </div>
       </div>
     </form>
   </section>
@@ -451,5 +453,6 @@
     </a>
   </div>
 </footer>
+<script src="js/script.min.js"></script>
 </body>
 </html>

@@ -2,6 +2,11 @@
   background-color: $grey-light;
   color: $blue-light;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .user-post__photo {
@@ -11,6 +16,25 @@
 .user-post__publish {
   padding-top: 80px;
   margin-bottom: -15px;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.user-post__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding: 40px 80px;
+  }
 }
 
 .user-post__buttons {
@@ -21,6 +45,12 @@
     border-top: none;
     padding-top: 0;
     margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 
   &--send {
@@ -83,7 +113,6 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin: 0;
-    padding-left: 0;
     padding-right: 0;
     display: flex;
     justify-content: center;
@@ -93,7 +122,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 5px;
-    padding-left: 100px;
+    padding-left: 55px;
   }
 }
 
@@ -168,8 +197,8 @@
 }
 
 .user-post__filter {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 30px;
+  margin-right: 20px;
   cursor: pointer;
 
   @media (max-width: $tablet-width) {
@@ -220,7 +249,7 @@
 }
 
 .user-post__rect {
-  margin-left: 12px;
+  margin-left: 20px;
   margin-top: -40px;
   margin-bottom: -120px;
 
@@ -335,6 +364,11 @@
 }
 
 .user-post__work {
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
