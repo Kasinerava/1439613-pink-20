@@ -6,6 +6,11 @@ body {
   line-height: $line-height;
   color: $font-color;
   background-color: $white;
+  min-width: 320px;
+}
+
+.page-header {
+  min-width: 320px;
 }
 
 .visually-hidden:not(:focus):not(:active),

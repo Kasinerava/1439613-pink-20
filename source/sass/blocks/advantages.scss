@@ -13,6 +13,10 @@
 .advantages__back {
   position: relative;
   background-color: $grey-light;
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-35px);
+  }
 }
 
 .advantages__back::before {
@@ -78,7 +82,7 @@
 
 .advantages__list {
   list-style-type: none;
-  padding-top: 60px;
+  padding-top: 75px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 320px;

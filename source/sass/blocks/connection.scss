@@ -2,7 +2,7 @@
   background-color: $white;
   color: $black;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .connection__address {
@@ -45,9 +45,19 @@
 }
 
 .connection__map {
-  img {
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  height: 225px;
+  overflow: hidden;
+  top: -12px;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+    top: -22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    top: -100px;
   }
 }
 
@@ -73,16 +83,18 @@
   @media (min-width: $tablet-width) {
     max-width: 660px;
     margin: 0 auto;
+    transform: translateY(-35px);
   }
 
   @media (min-width: $desktop-width) {
     max-width: 960px;
     margin: 0 auto;
+    transform: none;
   }
 }
 
 .connection__contacts-text {
-  padding-top: 7px;
+  padding-top: 5px;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
