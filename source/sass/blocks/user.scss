@@ -498,6 +498,12 @@
   color: rgba($white, 0.3);
 }
 
+.user__submit:disabled {
+  background: $grey;
+  border: 2px solid $grey;
+  color: $white;
+}
+
 .user__submit-form {
   span {
     color: $pink;

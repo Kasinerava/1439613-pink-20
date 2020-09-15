@@ -3,9 +3,16 @@
   color: $blue-light;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+    padding-top: 16px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 960px;
     margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -24,11 +31,14 @@
 }
 
 .user-post__wrapper {
+  justify-content: center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     max-width: 660px;
     margin: 0 auto;
     padding: 40px 20px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,8 +48,8 @@
 }
 
 .user-post__buttons {
-  padding-top: 15px;
   border-top: 1px solid rgba($blue-light, 0.1);
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     border-top: none;
@@ -50,7 +60,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   &--send {
@@ -61,6 +72,7 @@
     padding: 10px 20px;
     border: 3px solid $pink;
     border-radius: 30px;
+    align-items: center;
 
     @media (min-width: $desktop-width) {
       width: 183px;
@@ -86,10 +98,12 @@
     padding: 10px 20px;
     border: 3px solid rgba($grey-dark, 0.1);
     border-radius: 30px;
+    align-items: center;
 
     @media (min-width: $desktop-width) {
       width: 183px;
       margin-left: 53px;
+      margin-top: 35px;
     }
   }
 
@@ -132,7 +146,7 @@
   }
 }
 
-.user__post-crop,
+.user-post__crop,
 .user-post__contrast,
 .user-post__fill {
   @media (min-width: $tablet-width) {
@@ -292,15 +306,8 @@
   }
 }
 
-.user-post__slider:active {
+.user-post__slider:focus {
   background: $pink;
-}
-
-.user__post-wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    padding: 20px;
-  }
 }
 
 .user-post__range {
@@ -382,8 +389,6 @@
 }
 
 .user-post__work {
-  padding-top: 30px;
-
   @media (max-width: $tablet-width) {
     margin: 0 auto;
     max-width: 320px;

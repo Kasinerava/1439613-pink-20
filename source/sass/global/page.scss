@@ -39,6 +39,14 @@ img {
   margin: 0 auto;
 }
 
+textarea:hover {
+  border: 2px solid $blue-light;
+}
+
+textarea:focus {
+  border: 2px solid $pink;
+}
+
 *,
 *::before,
 *::after {

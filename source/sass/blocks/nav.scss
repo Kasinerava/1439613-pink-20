@@ -127,8 +127,16 @@
   color: $pink;
 }
 
+.nav__item--active a:hover {
+  color: $white;
+}
+
 .nav__item a:active {
   color: rgba($white, 0.3);
+}
+
+.nav__item--active a:active {
+  color: $white;
 }
 
 button.nav__toggle:hover svg path {
