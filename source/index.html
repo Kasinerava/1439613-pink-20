@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
   <link href="css/styles.min.css" rel="stylesheet">
   <title>HTML Academy: Пинк</title>
 </head>
@@ -60,39 +63,39 @@
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item nav__item--active">
-            <a href="index.html">Главная</a>
+            <a aria-label="Главная страница">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="photo.html">Фотографии</a>
+            <a href="photo.html" aria-label="Фотографии">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a href="form.html">Конкурс</a>
+            <a href="form.html" aria-label="Наш конкурс">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+            <a href="https://htmlacademy.ru" aria-label="HTML-Academy">HTML Academy</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <h2 class="visually-hidden">Приложение Pink</h2>
+  <h1 class="visually-hidden">Приложение Pink</h1>
   <section class="intro">
     <h2 class="visually-hidden">Скачать приложение Pink</h2>
-    <p class="intro__text">Взгляните на жизнь<br>иначе!</p>
+    <p class="intro__text">Взгляните на жизнь иначе!</p>
     <a href="https://www.apple.com/ios/app-store/" class="intro__btn btn btn--download">Скачать приложение</a>
     <ul class="intro__items">
       <li class="intro__item intro__item--apple">
-        <a href="https://www.apple.com/ios/app-store/">
+        <a href="https://www.apple.com/ios/app-store/" aria-label="Скачать на айфон">
           <img src="img/logo-apple.svg" alt="Ссылка для айфона" width="47" height="56">
         </a>
       </li>
       <li class="intro__item intro__item--android">
-        <a href="https://play.google.com/store/apps">
+        <a href="https://play.google.com/store/apps" aria-label="Скачать на андроид">
           <img src="img/logo-android.svg" alt="Ссылка для андроид" width="43" height="47">
         </a>
       </li>
       <li class="intro__item intro__item--microsoft">
-        <a href="https://www.microsoft.com/uk-ua/store/apps/windows">
+        <a href="https://www.microsoft.com/uk-ua/store/apps/windows" aria-label="Скачать на windows">
           <img src="img/logo-microsoft.svg" alt="Ссылка для майкрософт" width="44" height="41">
         </a>
       </li>
@@ -129,7 +132,7 @@
   </section>
   <section class="effects">
     <h2 class="visually-hidden">Особенность приложения</h2>
-    <div class="container">
+    <div class="container effects__container">
       <div class="effects__text">
         <div class="effects__image">
           <svg xmlns="http://www.w3.org/2000/svg" width="295" height="345" viewBox="0 0 298 345" class="effects__timer">
@@ -181,9 +184,9 @@
           </article>
         </div>
         <p class="reviews__toggles toggles">
-          <button class="toggles__item toggles__item--current" type="button"></button>
-          <button class="toggles__item" type="button"></button>
-          <button class="toggles__item" type="button"></button>
+          <button class="toggles__item toggles__item--current" type="button" aria-label="Первый отзыв"></button>
+          <button class="toggles__item" type="button" aria-label="Второй отзыв"></button>
+          <button class="toggles__item" type="button" aria-label="Третий отзыв"></button>
         </p>
       </div>
     </div>
@@ -309,9 +312,9 @@
     </div>
     <div>
       <p class="proposal__toggles toggles">
-        <button class="toggles__item" type="button"></button>
-        <button class="toggles__item toggles__item--current" type="button"></button>
-        <button class="toggles__item" type="button"></button>
+        <button class="toggles__item" type="button" aria-label="Первый пакет услуг"></button>
+        <button class="toggles__item toggles__item--current" type="button" aria-label="Второй пакет услуг"></button>
+        <button class="toggles__item" type="button" aria-label="Третий пакет услуг"></button>
       </p>
     </div>
   </section>
@@ -321,27 +324,22 @@
     <div class="connection__contacts">
       <div class="connection__wrapper">
         <div class="connection__tel">
-        <p class="connection__contacts-text">Звоните:<br>
+          <p class="connection__contacts-text">Звоните:</p>
           <a class="connection__contacts-phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </p>
         </div>
         <div class="connection__mail">
-        <p class="connection__contacts-text">Пишите:<br>
+          <p class="connection__contacts-text">Пишите:</p>
           <a class="connection__contacts-mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
         </div>
       <div class="connection__address">
-        <p class="connection__contacts-text">Приезжайте в гости:<br>
-          <a class="connection__contacts-address" href="#">
-            ул. Большая<br>Конюшенная, 19/8
-          </a>
-        </p>
+        <p class="connection__contacts-text">Приезжайте в гости:</p>
+        <p class="connection__contacts-address">ул. Большая<br>Конюшенная, 19/8</p>
       </div>
       </div>
     </div>
     <div class="connection__map">
       <iframe class="connection__map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1593793098595!5m2!1sru!2sby" allowfullscreen title="ул. Большая Конюшенная, 19/8, Санкт-Петербург"></iframe>
-      <picture class="conection__map-pic">
+      <picture class="connection__map-pic">
         <source media="(min-width: 661px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
         <source media="(min-width: 321px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
         <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@1x.png 1x, img/bg-map-mobile@2x.jpg 2x" alt="карта">
@@ -369,7 +367,7 @@
   <div class="page-footer__social">
     <ul class="page-footer__social-list">
       <li class="page-footer__social-item">
-        <a href="#" class="page-footer__social-link">
+        <a href="#" class="page-footer__social-link" aria-label="Ссылка на твиттер">
           <svg xmlns="http://www.w3.org/2000/svg" height="13" width="15" viewBox="0 0 17.5 14.663" class="page-footer__social-twitter">
             <g id="W6EeEF_1_">
               <g>
@@ -380,14 +378,14 @@
         </a>
       </li>
       <li class="page-footer__social-item">
-        <a href="#" class="page-footer__social-link">
+        <a href="#" class="page-footer__social-link" aria-label="Ссылка на фейсбук">
           <svg class="page-footer__social-facebook" xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 8.673 18.944">
             <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
           </svg>
         </a>
       </li>
       <li class="page-footer__social-item">
-        <a href="#" class="page-footer__social-link">
+        <a href="#" class="page-footer__social-link" aria-label="Ссылка на ютуб">
           <svg class="page-footer__social-youtube" width="15" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.64 13.96">
             <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
           </svg>

@@ -16,6 +16,10 @@
       padding-right: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .intro__text {
@@ -24,14 +28,8 @@
   line-height: 29px;
   font-size: 24px;
   padding-top: 90px;
-
-  @media (max-width: $tablet-width) {
-    padding-bottom: 320px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 0;
-  }
+  padding-bottom: 320px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
     padding-top: 200px;
@@ -40,26 +38,28 @@
     padding-left: 50px;
     padding-right: 25px;
     max-width: 300px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
     font-size: 50px;
     line-height: 68px;
-    max-width: 300px;
     transform: translateX(-160px);
     padding-top: 204px;
+    margin-left: 0;
+    max-width: 315px;
   }
 }
 
 .intro__text-download {
   position: relative;
   display: block;
-  padding-bottom: 38px;
+  padding-bottom: 32px;
   padding-top: 5px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 16px;
     padding-bottom: 112px;
     font-size: 18px;
     line-height: 24px;
@@ -69,7 +69,8 @@
   @media (min-width: $desktop-width) {
     padding-top: 35px;
     padding-bottom: 128px;
-    transform: translateX(-150px);
+    transform: translateX(-320px);
+    padding-left: 0;
   }
 }
 
@@ -110,7 +111,7 @@
     height: 645px;
     background-position: center;
     width: 618px;
-    left: 190px;
+    left: 184px;
   }
 }
 
@@ -145,7 +146,10 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 45px;
-    transform: translateX(-150px);
+    position: relative;
+    top: -4px;
+    left: -320px;
+    margin-left: 0;
   }
 }
 
@@ -158,8 +162,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    transform: translateX(-150px);
+    padding-top: 50px;
+    transform: translateX(-320px);
+    margin-left: 0;
   }
 }
 
@@ -179,5 +184,9 @@
 
   &--microsoft {
     padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -7px;
   }
 }

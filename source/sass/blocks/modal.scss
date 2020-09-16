@@ -40,7 +40,33 @@
 .modal__error-attention {
   margin: 0;
   padding-bottom: 23px;
-  padding-top: 14px;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    max-width: 228px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.modal__ok-attention {
+  margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }
 
 .modal__error-text {
@@ -49,6 +75,25 @@
   text-align: center;
   margin: 0;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    max-width: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.modal__error-back {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 780px;
+    background-color: $grey-light;
+    padding: 54px 250px;
+    margin-top: 228px;
+  }
 }
 
 .modal__ok-text {
@@ -57,8 +102,10 @@
   max-width: 268px;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     max-width: 378px;
+    font-size: 18px;
+    padding-bottom: 46px;
   }
 }
 
@@ -78,6 +125,34 @@
   margin-top: 30px;
   margin-bottom: 20px;
   font-size: 18px;
+}
+
+.modal__error-button {
+  margin-top: 18px;
+}
+
+.modal__ok-button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal__ok-back {
+  margin-top: 192px;
+  position: absolute;
+  width: 320px;
+  background-color: $grey-light;
+  padding: 54px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding: 54px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    background-color: $grey-light;
+    padding: 54px 250px;
+  }
 }
 
 .modal__error-button:hover {
