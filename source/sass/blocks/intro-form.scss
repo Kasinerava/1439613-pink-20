@@ -5,6 +5,7 @@
   padding-top: 95px;
   padding-bottom: 50px;
   margin: 0 auto;
+  max-width: 228px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
@@ -13,5 +14,11 @@
     padding-bottom: 60px;
     max-width: 620px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 747px;
+    padding-top: 165px;
+    padding-bottom: 90px;
   }
 }

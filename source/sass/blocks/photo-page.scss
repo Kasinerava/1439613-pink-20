@@ -10,17 +10,19 @@
   line-height: 30px;
   padding-top: 44px;
   margin: 0 auto;
-  padding-bottom: 22px;
-  max-width: 280px;
+  padding-bottom: 47px;
+  max-width: 235px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     max-width: 440px;
-    padding-top: 64px;
+    padding-top: 90px;
+    padding-bottom: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 0;
+    padding-bottom: 4px;
+    max-width: 605px;
   }
 }
 
@@ -41,12 +43,12 @@
     margin: auto;
     padding: 0;
     list-style-type: none;
-    padding-top: 40px;
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 30px 20px;
     grid-template-columns: 300px 300px 300px;
     padding-top: 25px;
   }
@@ -67,6 +69,12 @@
   @media (min-width: $tablet-width) {
     max-width: 620px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 13px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +94,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 35px;
+    padding-top: 0;
   }
 }
 
@@ -108,12 +116,12 @@
 
   @media (min-width: $tablet-width) {
     left: 170px;
-    top: 66px;
+    top: 116px;
   }
 
   @media (min-width: $desktop-width) {
     left: 330px;
-    top: 76px;
+    top: 140px;
   }
 }
 
@@ -121,6 +129,10 @@
   margin-top: 30px;
   max-width: 100%;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 87px;
+  }
 }
 
 .photo-page__item-name {
@@ -130,7 +142,27 @@
   padding-left: 17px;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  color: $blue-light;
+}
+
+.photo-page__name-panorama {
+  text-align: left;
+  font-weight: 700;
+  font-size: $font-size;
+  padding-left: 17px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-top: 10px;
+  color: $blue-light;
+  text-decoration: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+  }
 }
 
 .photo-page__item-time {
@@ -143,6 +175,19 @@
   text-align: left;
   padding-left: 17px;
   margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.photo-page__text-panorama {
+  text-align: left;
+  padding-left: 17px;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    transform: translateY(-20px);
+  }
 }
 
 .photo-page__item-likes {
@@ -151,6 +196,10 @@
   color: $pink;
   margin-left: 18px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 8px;
+  }
 }
 
 .photo-page__item-rate a {
@@ -163,6 +212,15 @@
 
 .photo-page__item-heart {
   fill: $pink;
+
+  @media (min-width: $tablet-width) {
+    left: 138px;
+    position: relative;
+
+    &--panorama {
+      left: 0;
+    }
+  }
 }
 
 .photo-page__item-rate {
@@ -170,8 +228,39 @@
   padding-left: 17px;
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-top: 26px;
+    padding-bottom: 0;
+    position: absolute;
+    bottom: 22px;
+  }
+}
+
+.photo-page__rate-panorama {
+  @media (min-width: $tablet-width) {
+    order: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 0;
+    padding-right: 15px;
+    position: relative;
+    margin-top: 32px;
+  }
+}
+
+.photo-page__likes-panorama {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
 }
 
 .photo-page__tablet-wrapper {
@@ -187,15 +276,27 @@
   }
 }
 
+.photo-page__description {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 11px;
+    padding-top: 22px;
+    padding-right: 10px;
+    padding-bottom: 24px;
+    min-height: 130px;
+  }
+}
+
 .photo-page__list-item {
   background: $grey-light;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     max-width: 300px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
 
   img {

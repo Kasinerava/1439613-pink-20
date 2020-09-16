@@ -5,10 +5,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     transform: translateY(-40px);
-    max-width: 660px;
+    max-width: 620px;
     margin: 0 auto;
     background: transparent;
   }
@@ -18,11 +18,17 @@
     margin: 0 auto;
     justify-content: space-between;
     display: flex;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .page-footer__social {
   margin-top: 30px;
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-5px);
+  }
 }
 
 .page-footer__pink {
@@ -84,7 +90,7 @@
   font-size: $font-size;
   color: $blue-light;
   margin-bottom: 25px;
-  margin-top: 35px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,11 +98,17 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 60px;
+    transform: translate(7px, -4px);
   }
 }
 
 .page-footer__copyright-academy {
   fill: $pink;
+  transform: translateX(7px);
+
+  @media (min-width: $tablet-width) {
+    transform: translateX(3px);
+  }
 }
 
 .page-footer__copyright-academy:hover {
