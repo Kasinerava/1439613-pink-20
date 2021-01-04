@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding-top: 45px;
+    padding-top: 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +25,7 @@
     display: block;
     fill: $grey-light;
     margin: auto;
+    margin-top: 20px;
   }
 }
 
@@ -50,6 +51,7 @@
 .reviews__item {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &:not(:first-child) {
     display: none;
@@ -62,7 +64,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding-top: 50px;
+    padding-top: 53px;
     padding-left: 75px;
     padding-right: 75px;
   }
@@ -83,34 +85,64 @@
   }
 }
 
-.reviews__text::before {
+.reviews__button-left {
+  display: none;
+
   @media (min-width: $desktop-width) {
-    content: "";
     background-image: url("../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-position: left;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: 0;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
     position: absolute;
-    width: 100%;
-    height: 42px;
-    margin: 0 auto;
-    left: 0;
-    top: 80px;
+    top: 160px;
+    left: -10px;
     opacity: 0.3;
   }
 }
 
-.reviews__text::after {
+.reviews__button-left:hover {
   @media (min-width: $desktop-width) {
-    content: "";
+    opacity: 1;
+  }
+}
+
+.reviews__button-left:active {
+  @media (min-width: $desktop-width) {
+    opacity: 0.1;
+  }
+}
+
+.reviews__button-right {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     background-image: url("../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-position: right;
     position: absolute;
-    width: 100%;
-    height: 42px;
-    margin: 0 auto;
-    right: 0;
-    top: 80px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    border: 0;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    right: -10px;
+    top: 160px;
     opacity: 0.3;
+  }
+}
+
+.reviews__button-right:hover {
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
+
+.reviews__button-right:active {
+  @media (min-width: $desktop-width) {
+    opacity: 0.1;
   }
 }

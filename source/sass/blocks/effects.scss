@@ -1,11 +1,12 @@
 .effects {
-  @media (max-width: $tablet-width) {
-    display: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $grey-light;
-    transform: translateY(-15px);
   }
 }
 
@@ -13,23 +14,38 @@
   text-align: left;
   position: relative;
   display: flex;
-  padding-top: 65px;
+  padding-top: 54px;
   padding-bottom: 60px;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 45px;
+  }
+}
+
+.effects__container {
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .effects__information {
   padding-left: 72px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-top: 5px;
+    padding-left: 71px;
+    padding-top: 12px;
+    padding-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 70px;
     transform: translateY(-15px);
-    padding-top: 70px;
+    padding-top: 75px;
+    padding-right: 0;
   }
 }
 
@@ -37,7 +53,7 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  padding-right: 140px;
+  max-width: 168px;
   margin-bottom: 0;
   padding-bottom: 10px;
 
@@ -45,6 +61,11 @@
     line-height: 30px;
     padding-right: 110px;
     padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    max-width: none;
   }
 }
 
@@ -68,11 +89,17 @@
   border-bottom: 1px solid $pink;
   display: inline-block;
   line-height: 1;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;
+    margin-top: 13px;
   }
+}
+
+.effects__url:hover {
+  border-bottom: none;
 }
 
 .effects__image {

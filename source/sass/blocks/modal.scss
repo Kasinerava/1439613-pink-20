@@ -1,0 +1,178 @@
+.modal__error-window,
+.modal__ok-window {
+  display: none;
+}
+
+.modal__error-window--on,
+.modal__ok-window--on {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  width: 320px;
+  padding: 22px 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding: 50px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    padding: 50px 200px;
+  }
+}
+
+.modal__error-attention,
+.modal__ok-attention {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal__error-attention {
+  margin: 0;
+  padding-bottom: 23px;
+  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    max-width: 228px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.modal__ok-attention {
+  margin-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
+.modal__error-text {
+  font-size: $font-size;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    max-width: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.modal__error-back {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 780px;
+    background-color: $grey-light;
+    padding: 54px 250px;
+    margin-top: 228px;
+  }
+}
+
+.modal__ok-text {
+  font-size: $font-size;
+  line-height: 24px;
+  max-width: 268px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 378px;
+    font-size: 18px;
+    padding-bottom: 46px;
+  }
+}
+
+
+.modal__error-button,
+.modal__ok-button {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  background: $green;
+  color: $white;
+  border: 2px solid $green;
+  border-radius: 3px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 276px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.modal__error-button {
+  margin-top: 18px;
+}
+
+.modal__ok-button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modal__ok-back {
+  margin-top: 192px;
+  position: absolute;
+  width: 320px;
+  background-color: $grey-light;
+  padding: 54px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding: 54px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    background-color: $grey-light;
+    padding: 54px 250px;
+  }
+}
+
+.modal__error-button:hover {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+}
+
+.modal__error-button:active {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+  color: rgba($white, 0.3);
+}
+
+.modal__ok-button:hover {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+}
+
+.modal__ok-button:active {
+  background: $green-dark;
+  border: 2px solid $green-dark;
+  color: rgba($white, 0.3);
+}

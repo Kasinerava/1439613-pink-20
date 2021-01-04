@@ -8,7 +8,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

@@ -2,16 +2,23 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
-  margin: 0;
-  padding-top: 75px;
-  padding-bottom: 14px;
+  padding-top: 95px;
+  padding-bottom: 43px;
+  margin: 0 auto;
+  max-width: 228px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
-    padding-top: 120px;
-    padding-bottom: 25px;
+    padding-top: 178px;
+    padding-bottom: 58px;
     max-width: 620px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 747px;
+    padding-top: 165px;
+    padding-bottom: 90px;
   }
 }

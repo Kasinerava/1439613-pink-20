@@ -5,13 +5,17 @@
   padding-top: 110px;
   position: relative;
   overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     padding-top: 85px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 }
 
@@ -37,9 +41,13 @@
   background-color: $grey-light;
   max-width: 100%;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 45px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-bottom: 105px;
-    padding-top: 70px;
+    padding-bottom: 100px;
+    padding-top: 35px;
   }
 }
 
@@ -59,24 +67,19 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 30px;
-  padding-top: 10px;
+  padding-top: 13px;
+  padding-left: 90px;
+  padding-right: 100px;
   padding-bottom: 30px;
   border-right: 2px solid $grey;
-
-  @media (max-width: $tablet-width) {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
 
   span {
     font-weight: 300;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 13px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 13px 27px 10px;
+    width: 153px;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +88,8 @@
     padding-top: 20px;
     padding-left: 35px;
     padding-right: 35px;
+    padding-bottom: 20px;
+    width: 233px;
 
     span {
       font-size: 24px;
@@ -95,20 +100,24 @@
 .proposal__hit {
   position: absolute;
   transform: rotate(-45deg);
-  left: 274px;
+  left: 14px;
   top: 13px;
   font-size: 14px;
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
-    left: 320px;
-    top: 9px;
+    left: 7px;
+    top: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 460px;
+    left: 8px;
     top: 7px;
   }
+}
+
+.proposal__table-title--hit {
+  position: relative;
 }
 
 .proposal__table-title--hit::before {
@@ -120,24 +129,25 @@
     position: absolute;
     width: 100%;
     height: 73px;
-    left: -109px;
+    left: -103px;
     top: 0;
   }
 
   @media (min-width: $tablet-width) {
     content: "";
-    background-image: url("../img/bg-hit-tablet.svg");
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-position: top;
     position: absolute;
     width: 100%;
-    height: 73px;
-    left: 36px;
+    height: 61px;
+    left: -45px;
     top: 0;
+    background-size: 100% 61px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 23px;
+    left: -84px;
   }
 }
 
@@ -153,19 +163,14 @@
   }
 }
 
-//.proposal__table-title + .proposal__table-title {
-//  border-left: 2px solid transparent;
-//  border-right: 2px solid transparent;
-//}
-
 .proposal__item {
   text-align: center;
   background-color: $white;
   border: 2px solid $grey;
   border-top-width: 0;
-  padding-top: 12px;
+  padding-top: 11px;
   padding-left: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     max-width: 152px;
@@ -211,14 +216,17 @@
 
 .proposal__toggles {
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .proposal__tablet-title {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     padding-left: 18px;
     color: $grey-light;
   }
@@ -230,17 +238,18 @@
 }
 
 .proposal__item-tablet {
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
+  display: none;
 
   @media (min-width: $tablet-width) {
+    display: block;
     text-align: left;
     background-color: $white;
-    border: 2px solid $grey;
-    padding-top: 12px;
-    padding-left: 10px;
-    padding-bottom: 15px;
+    border: 1px solid $grey;
+    padding: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 9px;
   }
 }
 

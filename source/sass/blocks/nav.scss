@@ -46,33 +46,28 @@
   }
 }
 
-.nav__toggle:hover {
-  span {
-    background-color: $pink;
+.nav__buttons {
+  display: none;
+}
 
-    &::before {
-      background-color: $pink;
-    }
+.nav__toggle-cross {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 19px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
 
-    &::after {
-      background-color: $pink;
-    }
+  @media (min-width: $tablet-width) {
+    top: 45px;
   }
 }
 
-.nav__toggle:active {
-  span {
-    background-color: rgba($pink, 0.3);
-
-    &::before {
-      background-color: rgba($pink, 0.3);
-    }
-
-    &::after {
-      background-color: rgba($pink, 0.3);
-    }
-  }
-}
 
 .nav__wrapper {
   display: none;
@@ -132,6 +127,30 @@
   color: $pink;
 }
 
+.nav__item--active a:hover {
+  color: $white;
+}
+
 .nav__item a:active {
   color: rgba($white, 0.3);
+}
+
+.nav__item--active a:active {
+  color: $white;
+}
+
+button.nav__toggle:hover svg path {
+  fill: $pink;
+}
+
+button.nav__toggle:active svg path {
+  fill: rgba($white, 0.3);
+}
+
+button.nav__toggle-cross:hover svg path {
+  fill: $pink;
+}
+
+button.nav__toggle-cross:active svg path {
+  fill: rgba($white, 0.3);
 }

@@ -6,15 +6,45 @@ body {
   line-height: $line-height;
   color: $font-color;
   background-color: $white;
+  min-width: 320px;
 }
 
-.visually-hidden {
+.page-header {
+  min-width: 320px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
-  margin: 0;
+  margin: -1px;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+input:hover {
+  border: 2px solid $blue-light;
+}
+
+input:focus {
+  border: 2px solid $pink;
+}
+
+img {
+  margin: 0 auto;
+}
+
+textarea:hover {
+  border: 2px solid $blue-light;
+}
+
+textarea:focus {
+  border: 2px solid $pink;
 }
 
 *,
